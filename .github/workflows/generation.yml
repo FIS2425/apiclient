@@ -35,14 +35,10 @@ jobs:
             --additional-properties=useSingleRequestParameter=true
             --additional-properties=stringEnums=true
             --enable-post-process-file
+            --skip-validate-spec
             -o /src
 
-      - name: Check if .ts files have changed 🧐
-        id: diff
-        run: echo "count=$(git status -su | grep ts | wc -l)" >> $GITHUB_OUTPUT
-
       - name: Commit changes 📝
-        if: ${{ steps.diff.outputs.count > 0 }}
         run: |
           git config user.name GitHub Actions
           git config user.email action@github.com
@@ -50,5 +46,6 @@ jobs:
           git config rebase.autoStash true
           git pull
           git add src/*.ts
+          git add openapi.yaml
           git commit -m "ci: update apiclient" -m "" -m "Run id: ${{ github.run_id }}" || echo
           git push
