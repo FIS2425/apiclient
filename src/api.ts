@@ -77,6 +77,231 @@ export interface ApiV1AppointmentsIdDelete200Response {
 /**
  * 
  * @export
+ * @interface ApiV1HistoriesIdAllergyPost200Response
+ */
+export interface ApiV1HistoriesIdAllergyPost200Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAllergyPost200Response
+     */
+    '_id'?: string;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof ApiV1HistoriesIdAllergyPost200Response
+     */
+    'allergies'?: Array<string>;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAllergyPostRequest
+ */
+export interface ApiV1HistoriesIdAllergyPostRequest {
+    /**
+     * The name of the allergy to add.
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAllergyPostRequest
+     */
+    'allergy': string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAnalyticAnalyticIdDelete200Response
+ */
+export interface ApiV1HistoriesIdAnalyticAnalyticIdDelete200Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticAnalyticIdDelete200Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAnalyticAnalyticIdDelete400Response
+ */
+export interface ApiV1HistoriesIdAnalyticAnalyticIdDelete400Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticAnalyticIdDelete400Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAnalyticAnalyticIdDelete404Response
+ */
+export interface ApiV1HistoriesIdAnalyticAnalyticIdDelete404Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticAnalyticIdDelete404Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAnalyticAnalyticIdDelete500Response
+ */
+export interface ApiV1HistoriesIdAnalyticAnalyticIdDelete500Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticAnalyticIdDelete500Response
+     */
+    'message'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticAnalyticIdDelete500Response
+     */
+    'error'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdAnalyticPost201Response
+ */
+export interface ApiV1HistoriesIdAnalyticPost201Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticPost201Response
+     */
+    'message'?: string;
+    /**
+     * URL of the uploaded analytic.
+     * @type {string}
+     * @memberof ApiV1HistoriesIdAnalyticPost201Response
+     */
+    'analyticUrl'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImageImageIdDelete200Response
+ */
+export interface ApiV1HistoriesIdImageImageIdDelete200Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImageImageIdDelete200Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImageImageIdDelete400Response
+ */
+export interface ApiV1HistoriesIdImageImageIdDelete400Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImageImageIdDelete400Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImageImageIdDelete404Response
+ */
+export interface ApiV1HistoriesIdImageImageIdDelete404Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImageImageIdDelete404Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImageImageIdDelete500Response
+ */
+export interface ApiV1HistoriesIdImageImageIdDelete500Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImageImageIdDelete500Response
+     */
+    'message'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImageImageIdDelete500Response
+     */
+    'error'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImagePost201Response
+ */
+export interface ApiV1HistoriesIdImagePost201Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImagePost201Response
+     */
+    'message'?: string;
+    /**
+     * URL of the uploaded image.
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImagePost201Response
+     */
+    'imageUrl'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImagePost400Response
+ */
+export interface ApiV1HistoriesIdImagePost400Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImagePost400Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImagePost404Response
+ */
+export interface ApiV1HistoriesIdImagePost404Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImagePost404Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ApiV1HistoriesIdImagePost500Response
+ */
+export interface ApiV1HistoriesIdImagePost500Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiV1HistoriesIdImagePost500Response
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
  * @interface ApiV1LoginPost401Response
  */
 export interface ApiV1LoginPost401Response {
@@ -624,38 +849,42 @@ export interface Appointment {
     'createdAt'?: string;
 }
 
-export const AppointmentSpecialtyEnum = {
-    FamilyMedicine: 'family_medicine',
-    Nursing: 'nursing',
-    Physiotherapy: 'physiotherapy',
-    Gynecology: 'gynecology',
-    Pediatrics: 'pediatrics',
-    Dermatology: 'dermatology',
-    Cardiology: 'cardiology',
-    Neurology: 'neurology',
-    Orthopedics: 'orthopedics',
-    Psychiatry: 'psychiatry',
-    Endocrinology: 'endocrinology',
-    Oncology: 'oncology',
-    Radiology: 'radiology',
-    Surgery: 'surgery',
-    Ophthalmology: 'ophthalmology',
-    Urology: 'urology',
-    Anesthesiology: 'anesthesiology',
-    Otolaryngology: 'otolaryngology',
-    Gastroenterology: 'gastroenterology',
-    Other: 'other'
-} as const;
-
-export type AppointmentSpecialtyEnum = typeof AppointmentSpecialtyEnum[keyof typeof AppointmentSpecialtyEnum];
-export const AppointmentStatusEnum = {
-    Pending: 'pending',
-    Completed: 'completed',
-    Cancelled: 'cancelled',
-    NoShow: 'no-show'
-} as const;
-
-export type AppointmentStatusEnum = typeof AppointmentStatusEnum[keyof typeof AppointmentStatusEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum AppointmentSpecialtyEnum {
+    FamilyMedicine = 'family_medicine',
+    Nursing = 'nursing',
+    Physiotherapy = 'physiotherapy',
+    Gynecology = 'gynecology',
+    Pediatrics = 'pediatrics',
+    Dermatology = 'dermatology',
+    Cardiology = 'cardiology',
+    Neurology = 'neurology',
+    Orthopedics = 'orthopedics',
+    Psychiatry = 'psychiatry',
+    Endocrinology = 'endocrinology',
+    Oncology = 'oncology',
+    Radiology = 'radiology',
+    Surgery = 'surgery',
+    Ophthalmology = 'ophthalmology',
+    Urology = 'urology',
+    Anesthesiology = 'anesthesiology',
+    Otolaryngology = 'otolaryngology',
+    Gastroenterology = 'gastroenterology',
+    Other = 'other'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum AppointmentStatusEnum {
+    Pending = 'pending',
+    Completed = 'completed',
+    Cancelled = 'cancelled',
+    NoShow = 'no-show'
+}
 
 /**
  * 
@@ -695,30 +924,32 @@ export interface AppointmentCreate {
     'appointmentDate': string;
 }
 
-export const AppointmentCreateSpecialtyEnum = {
-    FamilyMedicine: 'family_medicine',
-    Nursing: 'nursing',
-    Physiotherapy: 'physiotherapy',
-    Gynecology: 'gynecology',
-    Pediatrics: 'pediatrics',
-    Dermatology: 'dermatology',
-    Cardiology: 'cardiology',
-    Neurology: 'neurology',
-    Orthopedics: 'orthopedics',
-    Psychiatry: 'psychiatry',
-    Endocrinology: 'endocrinology',
-    Oncology: 'oncology',
-    Radiology: 'radiology',
-    Surgery: 'surgery',
-    Ophthalmology: 'ophthalmology',
-    Urology: 'urology',
-    Anesthesiology: 'anesthesiology',
-    Otolaryngology: 'otolaryngology',
-    Gastroenterology: 'gastroenterology',
-    Other: 'other'
-} as const;
-
-export type AppointmentCreateSpecialtyEnum = typeof AppointmentCreateSpecialtyEnum[keyof typeof AppointmentCreateSpecialtyEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum AppointmentCreateSpecialtyEnum {
+    FamilyMedicine = 'family_medicine',
+    Nursing = 'nursing',
+    Physiotherapy = 'physiotherapy',
+    Gynecology = 'gynecology',
+    Pediatrics = 'pediatrics',
+    Dermatology = 'dermatology',
+    Cardiology = 'cardiology',
+    Neurology = 'neurology',
+    Orthopedics = 'orthopedics',
+    Psychiatry = 'psychiatry',
+    Endocrinology = 'endocrinology',
+    Oncology = 'oncology',
+    Radiology = 'radiology',
+    Surgery = 'surgery',
+    Ophthalmology = 'ophthalmology',
+    Urology = 'urology',
+    Anesthesiology = 'anesthesiology',
+    Otolaryngology = 'otolaryngology',
+    Gastroenterology = 'gastroenterology',
+    Other = 'other'
+}
 
 /**
  * 
@@ -746,39 +977,727 @@ export interface AppointmentUpdate {
     'status'?: AppointmentUpdateStatusEnum;
 }
 
-export const AppointmentUpdateSpecialtyEnum = {
-    FamilyMedicine: 'family_medicine',
-    Nursing: 'nursing',
-    Physiotherapy: 'physiotherapy',
-    Gynecology: 'gynecology',
-    Pediatrics: 'pediatrics',
-    Dermatology: 'dermatology',
-    Cardiology: 'cardiology',
-    Neurology: 'neurology',
-    Orthopedics: 'orthopedics',
-    Psychiatry: 'psychiatry',
-    Endocrinology: 'endocrinology',
-    Oncology: 'oncology',
-    Radiology: 'radiology',
-    Surgery: 'surgery',
-    Ophthalmology: 'ophthalmology',
-    Urology: 'urology',
-    Anesthesiology: 'anesthesiology',
-    Otolaryngology: 'otolaryngology',
-    Gastroenterology: 'gastroenterology',
-    Other: 'other'
-} as const;
+/**
+    * @export
+    * @enum {string}
+    */
+export enum AppointmentUpdateSpecialtyEnum {
+    FamilyMedicine = 'family_medicine',
+    Nursing = 'nursing',
+    Physiotherapy = 'physiotherapy',
+    Gynecology = 'gynecology',
+    Pediatrics = 'pediatrics',
+    Dermatology = 'dermatology',
+    Cardiology = 'cardiology',
+    Neurology = 'neurology',
+    Orthopedics = 'orthopedics',
+    Psychiatry = 'psychiatry',
+    Endocrinology = 'endocrinology',
+    Oncology = 'oncology',
+    Radiology = 'radiology',
+    Surgery = 'surgery',
+    Ophthalmology = 'ophthalmology',
+    Urology = 'urology',
+    Anesthesiology = 'anesthesiology',
+    Otolaryngology = 'otolaryngology',
+    Gastroenterology = 'gastroenterology',
+    Other = 'other'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum AppointmentUpdateStatusEnum {
+    Pending = 'pending',
+    Completed = 'completed',
+    Cancelled = 'cancelled',
+    NoShow = 'no-show'
+}
 
-export type AppointmentUpdateSpecialtyEnum = typeof AppointmentUpdateSpecialtyEnum[keyof typeof AppointmentUpdateSpecialtyEnum];
-export const AppointmentUpdateStatusEnum = {
-    Pending: 'pending',
-    Completed: 'completed',
-    Cancelled: 'cancelled',
-    NoShow: 'no-show'
-} as const;
+/**
+ * 
+ * @export
+ * @interface Clinic
+ */
+export interface Clinic {
+    /**
+     * Unique identifier for the clinic
+     * @type {string}
+     * @memberof Clinic
+     */
+    '_id'?: string;
+    /**
+     * Name of the clinic
+     * @type {string}
+     * @memberof Clinic
+     */
+    'name'?: string;
+    /**
+     * City where the clinic is located
+     * @type {string}
+     * @memberof Clinic
+     */
+    'city'?: string;
+    /**
+     * District of the clinic
+     * @type {string}
+     * @memberof Clinic
+     */
+    'district'?: string;
+    /**
+     * Subscription plan of the clinic
+     * @type {string}
+     * @memberof Clinic
+     */
+    'plan'?: string;
+    /**
+     * Status of the clinic
+     * @type {boolean}
+     * @memberof Clinic
+     */
+    'active'?: boolean;
+    /**
+     * Postal code of the clinic
+     * @type {string}
+     * @memberof Clinic
+     */
+    'postalCode'?: string;
+    /**
+     * ISO 3166-1 alpha-2 country code
+     * @type {string}
+     * @memberof Clinic
+     */
+    'countryCode'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ClinicalHistory
+ */
+export interface ClinicalHistory {
+    /**
+     * 
+     * @type {string}
+     * @memberof ClinicalHistory
+     */
+    'id'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof ClinicalHistory
+     */
+    'patientId'?: string;
+    /**
+     * 
+     * @type {Array<Treatment>}
+     * @memberof ClinicalHistory
+     */
+    'treatments'?: Array<Treatment>;
+    /**
+     * 
+     * @type {Array<CurrentCondition>}
+     * @memberof ClinicalHistory
+     */
+    'currentConditions'?: Array<CurrentCondition>;
+    /**
+     * 
+     * @type {Array<any>}
+     * @memberof ClinicalHistory
+     */
+    'images'?: Array<any>;
+    /**
+     * 
+     * @type {Array<any>}
+     * @memberof ClinicalHistory
+     */
+    'analytics'?: Array<any>;
+    /**
+     * 
+     * @type {string}
+     * @memberof ClinicalHistory
+     */
+    'createdAt'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof ClinicalHistory
+     */
+    'updatedAt'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface CreateClinicalHistory
+ */
+export interface CreateClinicalHistory {
+    /**
+     * 
+     * @type {string}
+     * @memberof CreateClinicalHistory
+     */
+    'patientId': string;
+}
+/**
+ * 
+ * @export
+ * @interface CurrentCondition
+ */
+export interface CurrentCondition {
+    /**
+     * Name of the current condition
+     * @type {string}
+     * @memberof CurrentCondition
+     */
+    'name': string;
+    /**
+     * Additional details about the current condition
+     * @type {string}
+     * @memberof CurrentCondition
+     */
+    'details': string;
+    /**
+     * When the condition started
+     * @type {string}
+     * @memberof CurrentCondition
+     */
+    'since'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ErrorResponse
+ */
+export interface ErrorResponse {
+    /**
+     * 
+     * @type {string}
+     * @memberof ErrorResponse
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ModelFile
+ */
+export interface ModelFile {
+    /**
+     * Name of the file
+     * @type {string}
+     * @memberof ModelFile
+     */
+    'name'?: string;
+    /**
+     * Original name of the file
+     * @type {string}
+     * @memberof ModelFile
+     */
+    'originalName'?: string;
+    /**
+     * URL of the file
+     * @type {string}
+     * @memberof ModelFile
+     */
+    'url'?: string;
+    /**
+     * Date the file was uploaded
+     * @type {string}
+     * @memberof ModelFile
+     */
+    'date'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface Patient
+ */
+export interface Patient {
+    /**
+     * Unique identifier of the patient.
+     * @type {string}
+     * @memberof Patient
+     */
+    'id'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'name': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'surname': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'birthdate': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'dni': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'city': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'clinicHistoryId': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'username': string;
+    /**
+     * 
+     * @type {string}
+     * @memberof Patient
+     */
+    'email': string;
+}
+/**
+ * 
+ * @export
+ * @interface Payment
+ */
+export interface Payment {
+    /**
+     * Unique identifier for the payment
+     * @type {string}
+     * @memberof Payment
+     */
+    '_id'?: string;
+    /**
+     * Date of the payment
+     * @type {string}
+     * @memberof Payment
+     */
+    'date'?: string;
+    /**
+     * UUID of the clinic associated with the payment
+     * @type {string}
+     * @memberof Payment
+     */
+    'clinicId'?: string;
+    /**
+     * Status of the payment
+     * @type {string}
+     * @memberof Payment
+     */
+    'status'?: PaymentStatusEnum;
+    /**
+     * UUID of the plan associated with the payment
+     * @type {string}
+     * @memberof Payment
+     */
+    'planId'?: string;
+}
 
-export type AppointmentUpdateStatusEnum = typeof AppointmentUpdateStatusEnum[keyof typeof AppointmentUpdateStatusEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum PaymentStatusEnum {
+    Pending = 'Pending',
+    Completed = 'Completed',
+    Failed = 'Failed'
+}
 
+/**
+ * 
+ * @export
+ * @interface PaymentPost200Response
+ */
+export interface PaymentPost200Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof PaymentPost200Response
+     */
+    'message'?: string;
+    /**
+     * Information about the payment intent created by Stripe.
+     * @type {object}
+     * @memberof PaymentPost200Response
+     */
+    'paymentIntent'?: object;
+}
+/**
+ * 
+ * @export
+ * @interface PaymentPost400Response
+ */
+export interface PaymentPost400Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof PaymentPost400Response
+     */
+    'error'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface PaymentPost404Response
+ */
+export interface PaymentPost404Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof PaymentPost404Response
+     */
+    'error'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface PaymentPostRequest
+ */
+export interface PaymentPostRequest {
+    /**
+     * ID of the clinic making the payment.
+     * @type {string}
+     * @memberof PaymentPostRequest
+     */
+    'clinicId'?: string;
+    /**
+     * ID of the plan being paid for.
+     * @type {string}
+     * @memberof PaymentPostRequest
+     */
+    'planId'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface Plan
+ */
+export interface Plan {
+    /**
+     * Unique identifier for the plan
+     * @type {string}
+     * @memberof Plan
+     */
+    '_id'?: string;
+    /**
+     * Name of the plan
+     * @type {string}
+     * @memberof Plan
+     */
+    'name'?: string;
+    /**
+     * Price of the plan
+     * @type {number}
+     * @memberof Plan
+     */
+    'price'?: number;
+    /**
+     * List of features included in the plan
+     * @type {Array<string>}
+     * @memberof Plan
+     */
+    'features'?: Array<string>;
+}
+/**
+ * 
+ * @export
+ * @interface RegisterClinicPostRequest
+ */
+export interface RegisterClinicPostRequest {
+    /**
+     * Name of the clinic
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'name': string;
+    /**
+     * City where the clinic is located
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'city': string;
+    /**
+     * District of the clinic
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'district': string;
+    /**
+     * Subscription plan of the clinic
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'plan': string;
+    /**
+     * Status of the clinic
+     * @type {boolean}
+     * @memberof RegisterClinicPostRequest
+     */
+    'active': boolean;
+    /**
+     * Postal code of the clinic
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'postalCode': string;
+    /**
+     * ISO 3166-1 alpha-2 country code
+     * @type {string}
+     * @memberof RegisterClinicPostRequest
+     */
+    'countryCode': string;
+}
+/**
+ * 
+ * @export
+ * @interface RegisterPaymentPostRequest
+ */
+export interface RegisterPaymentPostRequest {
+    /**
+     * Date of the payment
+     * @type {string}
+     * @memberof RegisterPaymentPostRequest
+     */
+    'date': string;
+    /**
+     * UUID of the clinic
+     * @type {string}
+     * @memberof RegisterPaymentPostRequest
+     */
+    'clinicId': string;
+    /**
+     * Status of the payment
+     * @type {string}
+     * @memberof RegisterPaymentPostRequest
+     */
+    'status': RegisterPaymentPostRequestStatusEnum;
+    /**
+     * UUID of the plan
+     * @type {string}
+     * @memberof RegisterPaymentPostRequest
+     */
+    'planId': string;
+}
+
+/**
+    * @export
+    * @enum {string}
+    */
+export enum RegisterPaymentPostRequestStatusEnum {
+    Pending = 'Pending',
+    Completed = 'Completed',
+    Failed = 'Failed'
+}
+
+/**
+ * 
+ * @export
+ * @interface StaffDoctorIdPutRequest
+ */
+export interface StaffDoctorIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffDoctorIdPutRequest
+     */
+    'specialty'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface StaffMeGet200Response
+ */
+export interface StaffMeGet200Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    '_id'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'name'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'surname'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'specialty'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'dni'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'clinicId'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'email'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffMeGet200Response
+     */
+    'userId'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface StaffRegisterPostRequest
+ */
+export interface StaffRegisterPostRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'name'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'surname'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'specialty'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'dni'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'clinicId'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'password'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffRegisterPostRequest
+     */
+    'email'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface Treatment
+ */
+export interface Treatment {
+    /**
+     * Name of the treatment
+     * @type {string}
+     * @memberof Treatment
+     */
+    'name': string;
+    /**
+     * Start date of the treatment
+     * @type {string}
+     * @memberof Treatment
+     */
+    'startDate'?: string;
+    /**
+     * End date of the treatment
+     * @type {string}
+     * @memberof Treatment
+     */
+    'endDate': string;
+    /**
+     * Instructions for the treatment
+     * @type {string}
+     * @memberof Treatment
+     */
+    'instructions': string;
+}
+/**
+ * 
+ * @export
+ * @interface UpdateClinicIdPutRequest
+ */
+export interface UpdateClinicIdPutRequest {
+    /**
+     * Updated name of the clinic
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'name'?: string;
+    /**
+     * Updated city where the clinic is located
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'city'?: string;
+    /**
+     * Updated district of the clinic
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'district'?: string;
+    /**
+     * Updated subscription plan of the clinic
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'plan'?: string;
+    /**
+     * Updated status of the clinic
+     * @type {boolean}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'active'?: boolean;
+    /**
+     * Updated postal code of the clinic
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'postalCode'?: string;
+    /**
+     * Updated ISO 3166-1 alpha-2 country code
+     * @type {string}
+     * @memberof UpdateClinicIdPutRequest
+     */
+    'countryCode'?: string;
+}
 /**
  * Schema for the User model, including fields for unique ID, email, password, role, and optional associations with patient and clinic.
  * @export
@@ -835,38 +1754,53 @@ export interface User {
     'updatedAt'?: string;
 }
 
-export const UserRolesEnum = {
-    Admin: 'admin',
-    Clinicadmin: 'clinicadmin',
-    Doctor: 'doctor',
-    Patient: 'patient'
-} as const;
-
-export type UserRolesEnum = typeof UserRolesEnum[keyof typeof UserRolesEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum UserRolesEnum {
+    Admin = 'admin',
+    Clinicadmin = 'clinicadmin',
+    Doctor = 'doctor',
+    Patient = 'patient'
+}
 
 /**
  * 
  * @export
- * @interface ValidateToken200Response
+ * @interface ValidateAuthToken200Response
  */
-export interface ValidateToken200Response {
+export interface ValidateAuthToken200Response {
     /**
      * 
      * @type {string}
-     * @memberof ValidateToken200Response
+     * @memberof ValidateAuthToken200Response
      */
     'message'?: string;
 }
 /**
  * 
  * @export
- * @interface ValidateToken401Response
+ * @interface ValidateAuthToken200Response1
  */
-export interface ValidateToken401Response {
+export interface ValidateAuthToken200Response1 {
     /**
      * 
      * @type {string}
-     * @memberof ValidateToken401Response
+     * @memberof ValidateAuthToken200Response1
+     */
+    'message'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface ValidateAuthToken401Response
+ */
+export interface ValidateAuthToken401Response {
+    /**
+     * 
+     * @type {string}
+     * @memberof ValidateAuthToken401Response
      */
     'message'?: string;
 }
@@ -1628,34 +2562,32 @@ export const AppointmentsApiFactory = function (configuration?: Configuration, b
         /**
          * Retrieve available appointment slots for a specific clinic, doctor, and date.
          * @summary Get available appointment slots
-         * @param {string} clinicId The ID of the clinic to check for available appointments
-         * @param {string} doctorId The ID of the doctor to check for available appointments
-         * @param {string} date The date to check for available appointments (in YYYY-MM-DD format)
+         * @param {AppointmentsApiApiV1AppointmentsAvailableGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsAvailableGet(clinicId: string, doctorId: string, date: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<ApiV1AppointmentsAvailableGet200ResponseInner>> {
-            return localVarFp.apiV1AppointmentsAvailableGet(clinicId, doctorId, date, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsAvailableGet(requestParameters: AppointmentsApiApiV1AppointmentsAvailableGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<ApiV1AppointmentsAvailableGet200ResponseInner>> {
+            return localVarFp.apiV1AppointmentsAvailableGet(requestParameters.clinicId, requestParameters.doctorId, requestParameters.date, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a list of all appointments for a specific clinic by its ID.
          * @summary Get all appointments for a clinic
-         * @param {string} clinicId The ID of the clinic whose appointments to retrieve
+         * @param {AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsClinicClinicIdGet(clinicId: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
-            return localVarFp.apiV1AppointmentsClinicClinicIdGet(clinicId, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsClinicClinicIdGet(requestParameters: AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
+            return localVarFp.apiV1AppointmentsClinicClinicIdGet(requestParameters.clinicId, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a list of all appointments for a specific doctor by their ID.
          * @summary Get all appointments for a doctor
-         * @param {string} doctorId The ID of the doctor whose appointments to retrieve
+         * @param {AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsDoctorDoctorIdGet(doctorId: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
-            return localVarFp.apiV1AppointmentsDoctorDoctorIdGet(doctorId, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsDoctorDoctorIdGet(requestParameters: AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
+            return localVarFp.apiV1AppointmentsDoctorDoctorIdGet(requestParameters.doctorId, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a list of all appointments in the system.
@@ -1669,96 +2601,284 @@ export const AppointmentsApiFactory = function (configuration?: Configuration, b
         /**
          * Change the status of an appointment to \"cancelled\" by its ID.
          * @summary Cancel an appointment
-         * @param {string} id The ID of the appointment to cancel
+         * @param {AppointmentsApiApiV1AppointmentsIdCancelPutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdCancelPut(id: string, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsIdCancelPut(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdCancelPut(requestParameters: AppointmentsApiApiV1AppointmentsIdCancelPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsIdCancelPut(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Change the status of an appointment to \"completed\" by its ID.
          * @summary Complete an appointment
-         * @param {string} id The ID of the appointment to complete
+         * @param {AppointmentsApiApiV1AppointmentsIdCompletePutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdCompletePut(id: string, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsIdCompletePut(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdCompletePut(requestParameters: AppointmentsApiApiV1AppointmentsIdCompletePutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsIdCompletePut(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Remove an appointment from the system by its ID.
          * @summary Delete an appointment
-         * @param {string} id The ID of the appointment to delete
+         * @param {AppointmentsApiApiV1AppointmentsIdDeleteRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdDelete(id: string, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1AppointmentsIdDelete200Response> {
-            return localVarFp.apiV1AppointmentsIdDelete(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdDelete(requestParameters: AppointmentsApiApiV1AppointmentsIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1AppointmentsIdDelete200Response> {
+            return localVarFp.apiV1AppointmentsIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve details of a specific appointment by its ID.
          * @summary Get appointment by ID
-         * @param {string} id The ID of the appointment to retrieve
+         * @param {AppointmentsApiApiV1AppointmentsIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdGet(id: string, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsIdGet(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdGet(requestParameters: AppointmentsApiApiV1AppointmentsIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Change the status of an appointment to \"no-show\" by its ID.
          * @summary Mark an appointment as no-show
-         * @param {string} id The ID of the appointment to mark as no-show
+         * @param {AppointmentsApiApiV1AppointmentsIdNoshowPutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdNoshowPut(id: string, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsIdNoshowPut(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdNoshowPut(requestParameters: AppointmentsApiApiV1AppointmentsIdNoshowPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsIdNoshowPut(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Modify details of an existing appointment by ID.
          * @summary Update an appointment
-         * @param {string} id The ID of the appointment to update
-         * @param {AppointmentUpdate} appointmentUpdate 
+         * @param {AppointmentsApiApiV1AppointmentsIdPutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdPut(id: string, appointmentUpdate: AppointmentUpdate, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsIdPut(id, appointmentUpdate, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdPut(requestParameters: AppointmentsApiApiV1AppointmentsIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsIdPut(requestParameters.id, requestParameters.appointmentUpdate, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve weather forecast for the location and date of a specific appointment by ID.
          * @summary Get weather forecast for appointment
-         * @param {string} id The ID of the appointment for which to retrieve weather information
+         * @param {AppointmentsApiApiV1AppointmentsIdWeatherGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsIdWeatherGet(id: string, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.apiV1AppointmentsIdWeatherGet(id, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsIdWeatherGet(requestParameters: AppointmentsApiApiV1AppointmentsIdWeatherGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.apiV1AppointmentsIdWeatherGet(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a list of all appointments for a specific patient by their ID.
          * @summary Get all appointments for a patient
-         * @param {string} patientId The ID of the patient whose appointments to retrieve
+         * @param {AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsPatientPatientIdGet(patientId: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
-            return localVarFp.apiV1AppointmentsPatientPatientIdGet(patientId, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsPatientPatientIdGet(requestParameters: AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Appointment>> {
+            return localVarFp.apiV1AppointmentsPatientPatientIdGet(requestParameters.patientId, options).then((request) => request(axios, basePath));
         },
         /**
          * Schedule a new appointment for a patient with specified details.
          * @summary Create a new appointment
-         * @param {AppointmentCreate} appointmentCreate 
+         * @param {AppointmentsApiApiV1AppointmentsPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1AppointmentsPost(appointmentCreate: AppointmentCreate, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
-            return localVarFp.apiV1AppointmentsPost(appointmentCreate, options).then((request) => request(axios, basePath));
+        apiV1AppointmentsPost(requestParameters: AppointmentsApiApiV1AppointmentsPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<Appointment> {
+            return localVarFp.apiV1AppointmentsPost(requestParameters.appointmentCreate, options).then((request) => request(axios, basePath));
         },
     };
 };
+
+/**
+ * Request parameters for apiV1AppointmentsAvailableGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsAvailableGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsAvailableGetRequest {
+    /**
+     * The ID of the clinic to check for available appointments
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsAvailableGet
+     */
+    readonly clinicId: string
+
+    /**
+     * The ID of the doctor to check for available appointments
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsAvailableGet
+     */
+    readonly doctorId: string
+
+    /**
+     * The date to check for available appointments (in YYYY-MM-DD format)
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsAvailableGet
+     */
+    readonly date: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsClinicClinicIdGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest {
+    /**
+     * The ID of the clinic whose appointments to retrieve
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsClinicClinicIdGet
+     */
+    readonly clinicId: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsDoctorDoctorIdGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest {
+    /**
+     * The ID of the doctor whose appointments to retrieve
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsDoctorDoctorIdGet
+     */
+    readonly doctorId: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdCancelPut operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdCancelPutRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdCancelPutRequest {
+    /**
+     * The ID of the appointment to cancel
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdCancelPut
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdCompletePut operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdCompletePutRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdCompletePutRequest {
+    /**
+     * The ID of the appointment to complete
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdCompletePut
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdDelete operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdDeleteRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdDeleteRequest {
+    /**
+     * The ID of the appointment to delete
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdGetRequest {
+    /**
+     * The ID of the appointment to retrieve
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdNoshowPut operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdNoshowPutRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdNoshowPutRequest {
+    /**
+     * The ID of the appointment to mark as no-show
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdNoshowPut
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdPut operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdPutRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdPutRequest {
+    /**
+     * The ID of the appointment to update
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {AppointmentUpdate}
+     * @memberof AppointmentsApiApiV1AppointmentsIdPut
+     */
+    readonly appointmentUpdate: AppointmentUpdate
+}
+
+/**
+ * Request parameters for apiV1AppointmentsIdWeatherGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsIdWeatherGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsIdWeatherGetRequest {
+    /**
+     * The ID of the appointment for which to retrieve weather information
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsIdWeatherGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsPatientPatientIdGet operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest {
+    /**
+     * The ID of the patient whose appointments to retrieve
+     * @type {string}
+     * @memberof AppointmentsApiApiV1AppointmentsPatientPatientIdGet
+     */
+    readonly patientId: string
+}
+
+/**
+ * Request parameters for apiV1AppointmentsPost operation in AppointmentsApi.
+ * @export
+ * @interface AppointmentsApiApiV1AppointmentsPostRequest
+ */
+export interface AppointmentsApiApiV1AppointmentsPostRequest {
+    /**
+     * 
+     * @type {AppointmentCreate}
+     * @memberof AppointmentsApiApiV1AppointmentsPost
+     */
+    readonly appointmentCreate: AppointmentCreate
+}
 
 /**
  * AppointmentsApi - object-oriented interface
@@ -1770,39 +2890,37 @@ export class AppointmentsApi extends BaseAPI {
     /**
      * Retrieve available appointment slots for a specific clinic, doctor, and date.
      * @summary Get available appointment slots
-     * @param {string} clinicId The ID of the clinic to check for available appointments
-     * @param {string} doctorId The ID of the doctor to check for available appointments
-     * @param {string} date The date to check for available appointments (in YYYY-MM-DD format)
+     * @param {AppointmentsApiApiV1AppointmentsAvailableGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsAvailableGet(clinicId: string, doctorId: string, date: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsAvailableGet(clinicId, doctorId, date, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsAvailableGet(requestParameters: AppointmentsApiApiV1AppointmentsAvailableGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsAvailableGet(requestParameters.clinicId, requestParameters.doctorId, requestParameters.date, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve a list of all appointments for a specific clinic by its ID.
      * @summary Get all appointments for a clinic
-     * @param {string} clinicId The ID of the clinic whose appointments to retrieve
+     * @param {AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsClinicClinicIdGet(clinicId: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsClinicClinicIdGet(clinicId, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsClinicClinicIdGet(requestParameters: AppointmentsApiApiV1AppointmentsClinicClinicIdGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsClinicClinicIdGet(requestParameters.clinicId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve a list of all appointments for a specific doctor by their ID.
      * @summary Get all appointments for a doctor
-     * @param {string} doctorId The ID of the doctor whose appointments to retrieve
+     * @param {AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsDoctorDoctorIdGet(doctorId: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsDoctorDoctorIdGet(doctorId, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsDoctorDoctorIdGet(requestParameters: AppointmentsApiApiV1AppointmentsDoctorDoctorIdGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsDoctorDoctorIdGet(requestParameters.doctorId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1819,110 +2937,109 @@ export class AppointmentsApi extends BaseAPI {
     /**
      * Change the status of an appointment to \"cancelled\" by its ID.
      * @summary Cancel an appointment
-     * @param {string} id The ID of the appointment to cancel
+     * @param {AppointmentsApiApiV1AppointmentsIdCancelPutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdCancelPut(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdCancelPut(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdCancelPut(requestParameters: AppointmentsApiApiV1AppointmentsIdCancelPutRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdCancelPut(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Change the status of an appointment to \"completed\" by its ID.
      * @summary Complete an appointment
-     * @param {string} id The ID of the appointment to complete
+     * @param {AppointmentsApiApiV1AppointmentsIdCompletePutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdCompletePut(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdCompletePut(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdCompletePut(requestParameters: AppointmentsApiApiV1AppointmentsIdCompletePutRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdCompletePut(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Remove an appointment from the system by its ID.
      * @summary Delete an appointment
-     * @param {string} id The ID of the appointment to delete
+     * @param {AppointmentsApiApiV1AppointmentsIdDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdDelete(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdDelete(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdDelete(requestParameters: AppointmentsApiApiV1AppointmentsIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve details of a specific appointment by its ID.
      * @summary Get appointment by ID
-     * @param {string} id The ID of the appointment to retrieve
+     * @param {AppointmentsApiApiV1AppointmentsIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdGet(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdGet(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdGet(requestParameters: AppointmentsApiApiV1AppointmentsIdGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Change the status of an appointment to \"no-show\" by its ID.
      * @summary Mark an appointment as no-show
-     * @param {string} id The ID of the appointment to mark as no-show
+     * @param {AppointmentsApiApiV1AppointmentsIdNoshowPutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdNoshowPut(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdNoshowPut(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdNoshowPut(requestParameters: AppointmentsApiApiV1AppointmentsIdNoshowPutRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdNoshowPut(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Modify details of an existing appointment by ID.
      * @summary Update an appointment
-     * @param {string} id The ID of the appointment to update
-     * @param {AppointmentUpdate} appointmentUpdate 
+     * @param {AppointmentsApiApiV1AppointmentsIdPutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdPut(id: string, appointmentUpdate: AppointmentUpdate, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdPut(id, appointmentUpdate, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdPut(requestParameters: AppointmentsApiApiV1AppointmentsIdPutRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdPut(requestParameters.id, requestParameters.appointmentUpdate, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve weather forecast for the location and date of a specific appointment by ID.
      * @summary Get weather forecast for appointment
-     * @param {string} id The ID of the appointment for which to retrieve weather information
+     * @param {AppointmentsApiApiV1AppointmentsIdWeatherGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsIdWeatherGet(id: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdWeatherGet(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsIdWeatherGet(requestParameters: AppointmentsApiApiV1AppointmentsIdWeatherGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsIdWeatherGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve a list of all appointments for a specific patient by their ID.
      * @summary Get all appointments for a patient
-     * @param {string} patientId The ID of the patient whose appointments to retrieve
+     * @param {AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsPatientPatientIdGet(patientId: string, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsPatientPatientIdGet(patientId, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsPatientPatientIdGet(requestParameters: AppointmentsApiApiV1AppointmentsPatientPatientIdGetRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsPatientPatientIdGet(requestParameters.patientId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Schedule a new appointment for a patient with specified details.
      * @summary Create a new appointment
-     * @param {AppointmentCreate} appointmentCreate 
+     * @param {AppointmentsApiApiV1AppointmentsPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AppointmentsApi
      */
-    public apiV1AppointmentsPost(appointmentCreate: AppointmentCreate, options?: RawAxiosRequestConfig) {
-        return AppointmentsApiFp(this.configuration).apiV1AppointmentsPost(appointmentCreate, options).then((request) => request(this.axios, this.basePath));
+    public apiV1AppointmentsPost(requestParameters: AppointmentsApiApiV1AppointmentsPostRequest, options?: RawAxiosRequestConfig) {
+        return AppointmentsApiFp(this.configuration).apiV1AppointmentsPost(requestParameters.appointmentCreate, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
@@ -2001,13 +3118,43 @@ export const AuthenticationApiAxiosParamCreator = function (configuration?: Conf
             };
         },
         /**
+         * Refreshes the user\'s auth and refresh tokens and sets new values in cookies.
+         * @summary Refreshes the user\'s token.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        validateAuthToken: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/v1/token/refresh`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
          * Checks the validity of the token provided in the user\'s cookies.
          * @summary Validates the user\'s token.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        validateToken: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/api/v1/validate`;
+        validateAuthToken_1: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/v1/token/validate`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -2066,15 +3213,27 @@ export const AuthenticationApiFp = function(configuration?: Configuration) {
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
+         * Refreshes the user\'s auth and refresh tokens and sets new values in cookies.
+         * @summary Refreshes the user\'s token.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async validateAuthToken(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ValidateAuthToken200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.validateAuthToken(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['AuthenticationApi.validateAuthToken']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
          * Checks the validity of the token provided in the user\'s cookies.
          * @summary Validates the user\'s token.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async validateToken(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ValidateToken200Response>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.validateToken(options);
+        async validateAuthToken_1(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ValidateAuthToken200Response1>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.validateAuthToken_1(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['AuthenticationApi.validateToken']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['AuthenticationApi.validateAuthToken_1']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
@@ -2090,12 +3249,12 @@ export const AuthenticationApiFactory = function (configuration?: Configuration,
         /**
          * Authenticates a user with their email and password.
          * @summary User Login
-         * @param {ApiV1LoginPostRequest} apiV1LoginPostRequest 
+         * @param {AuthenticationApiApiV1LoginPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1LoginPost(apiV1LoginPostRequest: ApiV1LoginPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersVerify2faPost200Response> {
-            return localVarFp.apiV1LoginPost(apiV1LoginPostRequest, options).then((request) => request(axios, basePath));
+        apiV1LoginPost(requestParameters: AuthenticationApiApiV1LoginPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersVerify2faPost200Response> {
+            return localVarFp.apiV1LoginPost(requestParameters.apiV1LoginPostRequest, options).then((request) => request(axios, basePath));
         },
         /**
          * Logs out a user by clearing authentication tokens.
@@ -2107,16 +3266,39 @@ export const AuthenticationApiFactory = function (configuration?: Configuration,
             return localVarFp.apiV1LogoutPost(options).then((request) => request(axios, basePath));
         },
         /**
+         * Refreshes the user\'s auth and refresh tokens and sets new values in cookies.
+         * @summary Refreshes the user\'s token.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        validateAuthToken(options?: RawAxiosRequestConfig): AxiosPromise<ValidateAuthToken200Response> {
+            return localVarFp.validateAuthToken(options).then((request) => request(axios, basePath));
+        },
+        /**
          * Checks the validity of the token provided in the user\'s cookies.
          * @summary Validates the user\'s token.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        validateToken(options?: RawAxiosRequestConfig): AxiosPromise<ValidateToken200Response> {
-            return localVarFp.validateToken(options).then((request) => request(axios, basePath));
+        validateAuthToken_1(options?: RawAxiosRequestConfig): AxiosPromise<ValidateAuthToken200Response1> {
+            return localVarFp.validateAuthToken_1(options).then((request) => request(axios, basePath));
         },
     };
 };
+
+/**
+ * Request parameters for apiV1LoginPost operation in AuthenticationApi.
+ * @export
+ * @interface AuthenticationApiApiV1LoginPostRequest
+ */
+export interface AuthenticationApiApiV1LoginPostRequest {
+    /**
+     * 
+     * @type {ApiV1LoginPostRequest}
+     * @memberof AuthenticationApiApiV1LoginPost
+     */
+    readonly apiV1LoginPostRequest: ApiV1LoginPostRequest
+}
 
 /**
  * AuthenticationApi - object-oriented interface
@@ -2128,13 +3310,13 @@ export class AuthenticationApi extends BaseAPI {
     /**
      * Authenticates a user with their email and password.
      * @summary User Login
-     * @param {ApiV1LoginPostRequest} apiV1LoginPostRequest 
+     * @param {AuthenticationApiApiV1LoginPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AuthenticationApi
      */
-    public apiV1LoginPost(apiV1LoginPostRequest: ApiV1LoginPostRequest, options?: RawAxiosRequestConfig) {
-        return AuthenticationApiFp(this.configuration).apiV1LoginPost(apiV1LoginPostRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1LoginPost(requestParameters: AuthenticationApiApiV1LoginPostRequest, options?: RawAxiosRequestConfig) {
+        return AuthenticationApiFp(this.configuration).apiV1LoginPost(requestParameters.apiV1LoginPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -2149,14 +3331,3606 @@ export class AuthenticationApi extends BaseAPI {
     }
 
     /**
+     * Refreshes the user\'s auth and refresh tokens and sets new values in cookies.
+     * @summary Refreshes the user\'s token.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AuthenticationApi
+     */
+    public validateAuthToken(options?: RawAxiosRequestConfig) {
+        return AuthenticationApiFp(this.configuration).validateAuthToken(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
      * Checks the validity of the token provided in the user\'s cookies.
      * @summary Validates the user\'s token.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof AuthenticationApi
      */
-    public validateToken(options?: RawAxiosRequestConfig) {
-        return AuthenticationApiFp(this.configuration).validateToken(options).then((request) => request(this.axios, this.basePath));
+    public validateAuthToken_1(options?: RawAxiosRequestConfig) {
+        return AuthenticationApiFp(this.configuration).validateAuthToken_1(options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
+ * DefaultApi - axios parameter creator
+ * @export
+ */
+export const DefaultApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
+        /**
+         * 
+         * @summary Get all clinical histories
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/v1/histories`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Removes an allergy from the allergies set in a specific clinical history.
+         * @summary Remove an allergy from a clinical history
+         * @param {string} id The ID of the clinical history.
+         * @param {string} allergy The name of the allergy to remove.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAllergyAllergyDelete: async (id: string, allergy: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAllergyAllergyDelete', 'id', id)
+            // verify required parameter 'allergy' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAllergyAllergyDelete', 'allergy', allergy)
+            const localVarPath = `/api/v1/histories/{id}/allergy/{allergy}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"allergy"}}`, encodeURIComponent(String(allergy)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Adds an allergy to the allergies set in a specific clinical history.
+         * @summary Add an allergy to a clinical history
+         * @param {string} id The ID of the clinical history.
+         * @param {ApiV1HistoriesIdAllergyPostRequest} apiV1HistoriesIdAllergyPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAllergyPost: async (id: string, apiV1HistoriesIdAllergyPostRequest: ApiV1HistoriesIdAllergyPostRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAllergyPost', 'id', id)
+            // verify required parameter 'apiV1HistoriesIdAllergyPostRequest' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAllergyPost', 'apiV1HistoriesIdAllergyPostRequest', apiV1HistoriesIdAllergyPostRequest)
+            const localVarPath = `/api/v1/histories/{id}/allergy`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(apiV1HistoriesIdAllergyPostRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Deletes a specific analytic associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an analytic from a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {string} analyticId The ID of the analytic to delete.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAnalyticAnalyticIdDelete: async (id: string, analyticId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAnalyticAnalyticIdDelete', 'id', id)
+            // verify required parameter 'analyticId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAnalyticAnalyticIdDelete', 'analyticId', analyticId)
+            const localVarPath = `/api/v1/histories/{id}/analytic/{analyticId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"analyticId"}}`, encodeURIComponent(String(analyticId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Allows uploading an analytic to an existing clinical history record.
+         * @summary Upload an analytic to a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {File} [file] The analytic file to upload.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAnalyticPost: async (id: string, file?: File, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdAnalyticPost', 'id', id)
+            const localVarPath = `/api/v1/histories/{id}/analytic`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+            const localVarFormParams = new ((configuration && configuration.formDataCtor) || FormData)();
+
+
+            if (file !== undefined) { 
+                localVarFormParams.append('file', file as any);
+            }
+    
+    
+            localVarHeaderParameter['Content-Type'] = 'multipart/form-data';
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = localVarFormParams;
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete a current condition from a clinical history
+         * @param {string} id 
+         * @param {string} currentConditionId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionCurrentConditionIdDelete: async (id: string, currentConditionId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionCurrentConditionIdDelete', 'id', id)
+            // verify required parameter 'currentConditionId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionCurrentConditionIdDelete', 'currentConditionId', currentConditionId)
+            const localVarPath = `/api/v1/histories/{id}/condition/{currentConditionId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"currentConditionId"}}`, encodeURIComponent(String(currentConditionId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Update a current condition in a clinical history
+         * @param {string} id 
+         * @param {string} currentConditionId 
+         * @param {CurrentCondition} currentCondition 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionCurrentConditionIdPut: async (id: string, currentConditionId: string, currentCondition: CurrentCondition, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionCurrentConditionIdPut', 'id', id)
+            // verify required parameter 'currentConditionId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionCurrentConditionIdPut', 'currentConditionId', currentConditionId)
+            // verify required parameter 'currentCondition' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionCurrentConditionIdPut', 'currentCondition', currentCondition)
+            const localVarPath = `/api/v1/histories/{id}/condition/{currentConditionId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"currentConditionId"}}`, encodeURIComponent(String(currentConditionId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(currentCondition, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Add a new current condition to a clinical history
+         * @param {string} id 
+         * @param {CurrentCondition} currentCondition 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionPost: async (id: string, currentCondition: CurrentCondition, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionPost', 'id', id)
+            // verify required parameter 'currentCondition' is not null or undefined
+            assertParamExists('apiV1HistoriesIdConditionPost', 'currentCondition', currentCondition)
+            const localVarPath = `/api/v1/histories/{id}/condition`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(currentCondition, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by its ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdDelete: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdDelete', 'id', id)
+            const localVarPath = `/api/v1/histories/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get a clinical history by its ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdGet: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdGet', 'id', id)
+            const localVarPath = `/api/v1/histories/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Deletes a specific image associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an image from a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {string} imageId The ID of the image to delete.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdImageImageIdDelete: async (id: string, imageId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdImageImageIdDelete', 'id', id)
+            // verify required parameter 'imageId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdImageImageIdDelete', 'imageId', imageId)
+            const localVarPath = `/api/v1/histories/{id}/image/{imageId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"imageId"}}`, encodeURIComponent(String(imageId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Allows uploading an image to an existing clinical history record.
+         * @summary Upload an image to a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {File} [file] The image file to upload.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdImagePost: async (id: string, file?: File, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdImagePost', 'id', id)
+            const localVarPath = `/api/v1/histories/{id}/image`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+            const localVarFormParams = new ((configuration && configuration.formDataCtor) || FormData)();
+
+
+            if (file !== undefined) { 
+                localVarFormParams.append('file', file as any);
+            }
+    
+    
+            localVarHeaderParameter['Content-Type'] = 'multipart/form-data';
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = localVarFormParams;
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Add a new treatment to a clinical history
+         * @param {string} id 
+         * @param {Treatment} treatment 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentPost: async (id: string, treatment: Treatment, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentPost', 'id', id)
+            // verify required parameter 'treatment' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentPost', 'treatment', treatment)
+            const localVarPath = `/api/v1/histories/{id}/treatment`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(treatment, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete a treatment from a clinical history
+         * @param {string} id 
+         * @param {string} treatmentId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentTreatmentIdDelete: async (id: string, treatmentId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentTreatmentIdDelete', 'id', id)
+            // verify required parameter 'treatmentId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentTreatmentIdDelete', 'treatmentId', treatmentId)
+            const localVarPath = `/api/v1/histories/{id}/treatment/{treatmentId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"treatmentId"}}`, encodeURIComponent(String(treatmentId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Update a treatment in a clinical history
+         * @param {string} id 
+         * @param {string} treatmentId 
+         * @param {Treatment} treatment 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentTreatmentIdPut: async (id: string, treatmentId: string, treatment: Treatment, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentTreatmentIdPut', 'id', id)
+            // verify required parameter 'treatmentId' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentTreatmentIdPut', 'treatmentId', treatmentId)
+            // verify required parameter 'treatment' is not null or undefined
+            assertParamExists('apiV1HistoriesIdTreatmentTreatmentIdPut', 'treatment', treatment)
+            const localVarPath = `/api/v1/histories/{id}/treatment/{treatmentId}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)))
+                .replace(`{${"treatmentId"}}`, encodeURIComponent(String(treatmentId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(treatment, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by patient ID
+         * @param {string} patientId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPatientPatientIdDelete: async (patientId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'patientId' is not null or undefined
+            assertParamExists('apiV1HistoriesPatientPatientIdDelete', 'patientId', patientId)
+            const localVarPath = `/api/v1/histories/patient/{patientId}`
+                .replace(`{${"patientId"}}`, encodeURIComponent(String(patientId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get a clinical history by patient ID
+         * @param {string} patientId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPatientPatientIdGet: async (patientId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'patientId' is not null or undefined
+            assertParamExists('apiV1HistoriesPatientPatientIdGet', 'patientId', patientId)
+            const localVarPath = `/api/v1/histories/patient/{patientId}`
+                .replace(`{${"patientId"}}`, encodeURIComponent(String(patientId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Create a new clinical history
+         * @param {CreateClinicalHistory} createClinicalHistory 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPost: async (createClinicalHistory: CreateClinicalHistory, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'createClinicalHistory' is not null or undefined
+            assertParamExists('apiV1HistoriesPost', 'createClinicalHistory', createClinicalHistory)
+            const localVarPath = `/api/v1/histories`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(createClinicalHistory, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Deletes a specific clinic by its unique ID.
+         * @summary Delete a clinic by ID
+         * @param {string} id Unique identifier of the clinic
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteClinicIdDelete: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('deleteClinicIdDelete', 'id', id)
+            const localVarPath = `/deleteClinic/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Deletes a specific payment by its unique ID.
+         * @summary Delete a payment by ID
+         * @param {string} id Unique identifier of the payment
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deletePaymentIdDelete: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('deletePaymentIdDelete', 'id', id)
+            const localVarPath = `/deletePayment/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Retrieve a specific clinic by its unique ID.
+         * @summary Get a clinic by ID
+         * @param {string} id Unique identifier of the clinic
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getClinicByIdIdGet: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('getClinicByIdIdGet', 'id', id)
+            const localVarPath = `/getClinicById/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Retrieve a specific payment by its unique ID.
+         * @summary Get a payment by ID
+         * @param {string} id Unique identifier of the payment
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPaymentByIdIdGet: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('getPaymentByIdIdGet', 'id', id)
+            const localVarPath = `/getPaymentById/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Returns a list of all registered clinics.
+         * @summary Retrieve all clinics
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllClinicGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/obtainAllClinic`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Returns a list of all registered payments.
+         * @summary Retrieve all payments
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllPaymentsGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/obtainAllPayments`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Returns a list of all registered plans.
+         * @summary Retrieve all plans
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllPlansGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/obtainAllPlans`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Endpoint to process a payment, save the payment data, and activate the clinic.
+         * @summary Process a payment
+         * @param {PaymentPostRequest} paymentPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        paymentPost: async (paymentPostRequest: PaymentPostRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'paymentPostRequest' is not null or undefined
+            assertParamExists('paymentPost', 'paymentPostRequest', paymentPostRequest)
+            const localVarPath = `/payment`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(paymentPostRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Creates a new clinic and saves it in the database.
+         * @summary Register a new clinic
+         * @param {RegisterClinicPostRequest} registerClinicPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        registerClinicPost: async (registerClinicPostRequest: RegisterClinicPostRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'registerClinicPostRequest' is not null or undefined
+            assertParamExists('registerClinicPost', 'registerClinicPostRequest', registerClinicPostRequest)
+            const localVarPath = `/registerClinic`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(registerClinicPostRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Creates a new payment and saves it in the database.
+         * @summary Register a new payment
+         * @param {RegisterPaymentPostRequest} registerPaymentPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        registerPaymentPost: async (registerPaymentPostRequest: RegisterPaymentPostRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'registerPaymentPostRequest' is not null or undefined
+            assertParamExists('registerPaymentPost', 'registerPaymentPostRequest', registerPaymentPostRequest)
+            const localVarPath = `/registerPayment`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(registerPaymentPostRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Updates a clinic\'s details based on its unique ID.
+         * @summary Update a clinic by ID
+         * @param {string} id 
+         * @param {UpdateClinicIdPutRequest} updateClinicIdPutRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateClinicIdPut: async (id: string, updateClinicIdPutRequest: UpdateClinicIdPutRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('updateClinicIdPut', 'id', id)
+            // verify required parameter 'updateClinicIdPutRequest' is not null or undefined
+            assertParamExists('updateClinicIdPut', 'updateClinicIdPutRequest', updateClinicIdPutRequest)
+            const localVarPath = `/updateClinic/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(updateClinicIdPutRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+    }
+};
+
+/**
+ * DefaultApi - functional programming interface
+ * @export
+ */
+export const DefaultApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = DefaultApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * 
+         * @summary Get all clinical histories
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ClinicalHistory>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Removes an allergy from the allergies set in a specific clinical history.
+         * @summary Remove an allergy from a clinical history
+         * @param {string} id The ID of the clinical history.
+         * @param {string} allergy The name of the allergy to remove.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdAllergyAllergyDelete(id: string, allergy: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdAllergyPost200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdAllergyAllergyDelete(id, allergy, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdAllergyAllergyDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Adds an allergy to the allergies set in a specific clinical history.
+         * @summary Add an allergy to a clinical history
+         * @param {string} id The ID of the clinical history.
+         * @param {ApiV1HistoriesIdAllergyPostRequest} apiV1HistoriesIdAllergyPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdAllergyPost(id: string, apiV1HistoriesIdAllergyPostRequest: ApiV1HistoriesIdAllergyPostRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdAllergyPost200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdAllergyPost(id, apiV1HistoriesIdAllergyPostRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdAllergyPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Deletes a specific analytic associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an analytic from a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {string} analyticId The ID of the analytic to delete.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdAnalyticAnalyticIdDelete(id: string, analyticId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdAnalyticAnalyticIdDelete200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdAnalyticAnalyticIdDelete(id, analyticId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdAnalyticAnalyticIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Allows uploading an analytic to an existing clinical history record.
+         * @summary Upload an analytic to a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {File} [file] The analytic file to upload.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdAnalyticPost(id: string, file?: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdAnalyticPost201Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdAnalyticPost(id, file, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdAnalyticPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete a current condition from a clinical history
+         * @param {string} id 
+         * @param {string} currentConditionId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdConditionCurrentConditionIdDelete(id: string, currentConditionId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdConditionCurrentConditionIdDelete(id, currentConditionId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdConditionCurrentConditionIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Update a current condition in a clinical history
+         * @param {string} id 
+         * @param {string} currentConditionId 
+         * @param {CurrentCondition} currentCondition 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdConditionCurrentConditionIdPut(id: string, currentConditionId: string, currentCondition: CurrentCondition, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdConditionCurrentConditionIdPut(id, currentConditionId, currentCondition, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdConditionCurrentConditionIdPut']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Add a new current condition to a clinical history
+         * @param {string} id 
+         * @param {CurrentCondition} currentCondition 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdConditionPost(id: string, currentCondition: CurrentCondition, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdConditionPost(id, currentCondition, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdConditionPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by its ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdDelete(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdDelete(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Get a clinical history by its ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdGet(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdGet(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Deletes a specific image associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an image from a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {string} imageId The ID of the image to delete.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdImageImageIdDelete(id: string, imageId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdImageImageIdDelete200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdImageImageIdDelete(id, imageId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdImageImageIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Allows uploading an image to an existing clinical history record.
+         * @summary Upload an image to a clinical history record
+         * @param {string} id The ID of the clinical history record.
+         * @param {File} [file] The image file to upload.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdImagePost(id: string, file?: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ApiV1HistoriesIdImagePost201Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdImagePost(id, file, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdImagePost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Add a new treatment to a clinical history
+         * @param {string} id 
+         * @param {Treatment} treatment 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdTreatmentPost(id: string, treatment: Treatment, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdTreatmentPost(id, treatment, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdTreatmentPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete a treatment from a clinical history
+         * @param {string} id 
+         * @param {string} treatmentId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdTreatmentTreatmentIdDelete(id: string, treatmentId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdTreatmentTreatmentIdDelete(id, treatmentId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdTreatmentTreatmentIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Update a treatment in a clinical history
+         * @param {string} id 
+         * @param {string} treatmentId 
+         * @param {Treatment} treatment 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesIdTreatmentTreatmentIdPut(id: string, treatmentId: string, treatment: Treatment, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesIdTreatmentTreatmentIdPut(id, treatmentId, treatment, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesIdTreatmentTreatmentIdPut']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by patient ID
+         * @param {string} patientId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesPatientPatientIdDelete(patientId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesPatientPatientIdDelete(patientId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesPatientPatientIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Get a clinical history by patient ID
+         * @param {string} patientId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesPatientPatientIdGet(patientId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesPatientPatientIdGet(patientId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesPatientPatientIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Create a new clinical history
+         * @param {CreateClinicalHistory} createClinicalHistory 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1HistoriesPost(createClinicalHistory: CreateClinicalHistory, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClinicalHistory>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1HistoriesPost(createClinicalHistory, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.apiV1HistoriesPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Deletes a specific clinic by its unique ID.
+         * @summary Delete a clinic by ID
+         * @param {string} id Unique identifier of the clinic
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async deleteClinicIdDelete(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.deleteClinicIdDelete(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.deleteClinicIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Deletes a specific payment by its unique ID.
+         * @summary Delete a payment by ID
+         * @param {string} id Unique identifier of the payment
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async deletePaymentIdDelete(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.deletePaymentIdDelete(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.deletePaymentIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Retrieve a specific clinic by its unique ID.
+         * @summary Get a clinic by ID
+         * @param {string} id Unique identifier of the clinic
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getClinicByIdIdGet(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Clinic>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getClinicByIdIdGet(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.getClinicByIdIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Retrieve a specific payment by its unique ID.
+         * @summary Get a payment by ID
+         * @param {string} id Unique identifier of the payment
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getPaymentByIdIdGet(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Payment>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPaymentByIdIdGet(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.getPaymentByIdIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Returns a list of all registered clinics.
+         * @summary Retrieve all clinics
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async obtainAllClinicGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<Clinic>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.obtainAllClinicGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.obtainAllClinicGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Returns a list of all registered payments.
+         * @summary Retrieve all payments
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async obtainAllPaymentsGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<Payment>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.obtainAllPaymentsGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.obtainAllPaymentsGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Returns a list of all registered plans.
+         * @summary Retrieve all plans
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async obtainAllPlansGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<Plan>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.obtainAllPlansGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.obtainAllPlansGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Endpoint to process a payment, save the payment data, and activate the clinic.
+         * @summary Process a payment
+         * @param {PaymentPostRequest} paymentPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async paymentPost(paymentPostRequest: PaymentPostRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PaymentPost200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.paymentPost(paymentPostRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.paymentPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Creates a new clinic and saves it in the database.
+         * @summary Register a new clinic
+         * @param {RegisterClinicPostRequest} registerClinicPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async registerClinicPost(registerClinicPostRequest: RegisterClinicPostRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.registerClinicPost(registerClinicPostRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.registerClinicPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Creates a new payment and saves it in the database.
+         * @summary Register a new payment
+         * @param {RegisterPaymentPostRequest} registerPaymentPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async registerPaymentPost(registerPaymentPostRequest: RegisterPaymentPostRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.registerPaymentPost(registerPaymentPostRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.registerPaymentPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Updates a clinic\'s details based on its unique ID.
+         * @summary Update a clinic by ID
+         * @param {string} id 
+         * @param {UpdateClinicIdPutRequest} updateClinicIdPutRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateClinicIdPut(id: string, updateClinicIdPutRequest: UpdateClinicIdPutRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Clinic>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateClinicIdPut(id, updateClinicIdPutRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DefaultApi.updateClinicIdPut']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * DefaultApi - factory interface
+ * @export
+ */
+export const DefaultApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = DefaultApiFp(configuration)
+    return {
+        /**
+         * 
+         * @summary Get all clinical histories
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<ClinicalHistory>> {
+            return localVarFp.apiV1HistoriesGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Removes an allergy from the allergies set in a specific clinical history.
+         * @summary Remove an allergy from a clinical history
+         * @param {DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAllergyAllergyDelete(requestParameters: DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdAllergyPost200Response> {
+            return localVarFp.apiV1HistoriesIdAllergyAllergyDelete(requestParameters.id, requestParameters.allergy, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Adds an allergy to the allergies set in a specific clinical history.
+         * @summary Add an allergy to a clinical history
+         * @param {DefaultApiApiV1HistoriesIdAllergyPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAllergyPost(requestParameters: DefaultApiApiV1HistoriesIdAllergyPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdAllergyPost200Response> {
+            return localVarFp.apiV1HistoriesIdAllergyPost(requestParameters.id, requestParameters.apiV1HistoriesIdAllergyPostRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Deletes a specific analytic associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an analytic from a clinical history record
+         * @param {DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAnalyticAnalyticIdDelete(requestParameters: DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdAnalyticAnalyticIdDelete200Response> {
+            return localVarFp.apiV1HistoriesIdAnalyticAnalyticIdDelete(requestParameters.id, requestParameters.analyticId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Allows uploading an analytic to an existing clinical history record.
+         * @summary Upload an analytic to a clinical history record
+         * @param {DefaultApiApiV1HistoriesIdAnalyticPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdAnalyticPost(requestParameters: DefaultApiApiV1HistoriesIdAnalyticPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdAnalyticPost201Response> {
+            return localVarFp.apiV1HistoriesIdAnalyticPost(requestParameters.id, requestParameters.file, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete a current condition from a clinical history
+         * @param {DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionCurrentConditionIdDelete(requestParameters: DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdConditionCurrentConditionIdDelete(requestParameters.id, requestParameters.currentConditionId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Update a current condition in a clinical history
+         * @param {DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionCurrentConditionIdPut(requestParameters: DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdConditionCurrentConditionIdPut(requestParameters.id, requestParameters.currentConditionId, requestParameters.currentCondition, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Add a new current condition to a clinical history
+         * @param {DefaultApiApiV1HistoriesIdConditionPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdConditionPost(requestParameters: DefaultApiApiV1HistoriesIdConditionPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdConditionPost(requestParameters.id, requestParameters.currentCondition, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by its ID
+         * @param {DefaultApiApiV1HistoriesIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdDelete(requestParameters: DefaultApiApiV1HistoriesIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.apiV1HistoriesIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get a clinical history by its ID
+         * @param {DefaultApiApiV1HistoriesIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdGet(requestParameters: DefaultApiApiV1HistoriesIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Deletes a specific image associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+         * @summary Delete an image from a clinical history record
+         * @param {DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdImageImageIdDelete(requestParameters: DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdImageImageIdDelete200Response> {
+            return localVarFp.apiV1HistoriesIdImageImageIdDelete(requestParameters.id, requestParameters.imageId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Allows uploading an image to an existing clinical history record.
+         * @summary Upload an image to a clinical history record
+         * @param {DefaultApiApiV1HistoriesIdImagePostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdImagePost(requestParameters: DefaultApiApiV1HistoriesIdImagePostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1HistoriesIdImagePost201Response> {
+            return localVarFp.apiV1HistoriesIdImagePost(requestParameters.id, requestParameters.file, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Add a new treatment to a clinical history
+         * @param {DefaultApiApiV1HistoriesIdTreatmentPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentPost(requestParameters: DefaultApiApiV1HistoriesIdTreatmentPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdTreatmentPost(requestParameters.id, requestParameters.treatment, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete a treatment from a clinical history
+         * @param {DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentTreatmentIdDelete(requestParameters: DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdTreatmentTreatmentIdDelete(requestParameters.id, requestParameters.treatmentId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Update a treatment in a clinical history
+         * @param {DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesIdTreatmentTreatmentIdPut(requestParameters: DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesIdTreatmentTreatmentIdPut(requestParameters.id, requestParameters.treatmentId, requestParameters.treatment, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete a clinical history by patient ID
+         * @param {DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPatientPatientIdDelete(requestParameters: DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.apiV1HistoriesPatientPatientIdDelete(requestParameters.patientId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get a clinical history by patient ID
+         * @param {DefaultApiApiV1HistoriesPatientPatientIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPatientPatientIdGet(requestParameters: DefaultApiApiV1HistoriesPatientPatientIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesPatientPatientIdGet(requestParameters.patientId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Create a new clinical history
+         * @param {DefaultApiApiV1HistoriesPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1HistoriesPost(requestParameters: DefaultApiApiV1HistoriesPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ClinicalHistory> {
+            return localVarFp.apiV1HistoriesPost(requestParameters.createClinicalHistory, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Deletes a specific clinic by its unique ID.
+         * @summary Delete a clinic by ID
+         * @param {DefaultApiDeleteClinicIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deleteClinicIdDelete(requestParameters: DefaultApiDeleteClinicIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteClinicIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Deletes a specific payment by its unique ID.
+         * @summary Delete a payment by ID
+         * @param {DefaultApiDeletePaymentIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        deletePaymentIdDelete(requestParameters: DefaultApiDeletePaymentIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deletePaymentIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Retrieve a specific clinic by its unique ID.
+         * @summary Get a clinic by ID
+         * @param {DefaultApiGetClinicByIdIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getClinicByIdIdGet(requestParameters: DefaultApiGetClinicByIdIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Clinic> {
+            return localVarFp.getClinicByIdIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Retrieve a specific payment by its unique ID.
+         * @summary Get a payment by ID
+         * @param {DefaultApiGetPaymentByIdIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPaymentByIdIdGet(requestParameters: DefaultApiGetPaymentByIdIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Payment> {
+            return localVarFp.getPaymentByIdIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Returns a list of all registered clinics.
+         * @summary Retrieve all clinics
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllClinicGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<Clinic>> {
+            return localVarFp.obtainAllClinicGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Returns a list of all registered payments.
+         * @summary Retrieve all payments
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllPaymentsGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<Payment>> {
+            return localVarFp.obtainAllPaymentsGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Returns a list of all registered plans.
+         * @summary Retrieve all plans
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        obtainAllPlansGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<Plan>> {
+            return localVarFp.obtainAllPlansGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Endpoint to process a payment, save the payment data, and activate the clinic.
+         * @summary Process a payment
+         * @param {DefaultApiPaymentPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        paymentPost(requestParameters: DefaultApiPaymentPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<PaymentPost200Response> {
+            return localVarFp.paymentPost(requestParameters.paymentPostRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Creates a new clinic and saves it in the database.
+         * @summary Register a new clinic
+         * @param {DefaultApiRegisterClinicPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        registerClinicPost(requestParameters: DefaultApiRegisterClinicPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.registerClinicPost(requestParameters.registerClinicPostRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Creates a new payment and saves it in the database.
+         * @summary Register a new payment
+         * @param {DefaultApiRegisterPaymentPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        registerPaymentPost(requestParameters: DefaultApiRegisterPaymentPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.registerPaymentPost(requestParameters.registerPaymentPostRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Updates a clinic\'s details based on its unique ID.
+         * @summary Update a clinic by ID
+         * @param {DefaultApiUpdateClinicIdPutRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateClinicIdPut(requestParameters: DefaultApiUpdateClinicIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Clinic> {
+            return localVarFp.updateClinicIdPut(requestParameters.id, requestParameters.updateClinicIdPutRequest, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * Request parameters for apiV1HistoriesIdAllergyAllergyDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest {
+    /**
+     * The ID of the clinical history.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAllergyAllergyDelete
+     */
+    readonly id: string
+
+    /**
+     * The name of the allergy to remove.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAllergyAllergyDelete
+     */
+    readonly allergy: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdAllergyPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdAllergyPostRequest
+ */
+export interface DefaultApiApiV1HistoriesIdAllergyPostRequest {
+    /**
+     * The ID of the clinical history.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAllergyPost
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {ApiV1HistoriesIdAllergyPostRequest}
+     * @memberof DefaultApiApiV1HistoriesIdAllergyPost
+     */
+    readonly apiV1HistoriesIdAllergyPostRequest: ApiV1HistoriesIdAllergyPostRequest
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdAnalyticAnalyticIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest {
+    /**
+     * The ID of the clinical history record.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDelete
+     */
+    readonly id: string
+
+    /**
+     * The ID of the analytic to delete.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDelete
+     */
+    readonly analyticId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdAnalyticPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdAnalyticPostRequest
+ */
+export interface DefaultApiApiV1HistoriesIdAnalyticPostRequest {
+    /**
+     * The ID of the clinical history record.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdAnalyticPost
+     */
+    readonly id: string
+
+    /**
+     * The analytic file to upload.
+     * @type {File}
+     * @memberof DefaultApiApiV1HistoriesIdAnalyticPost
+     */
+    readonly file?: File
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdConditionCurrentConditionIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDelete
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDelete
+     */
+    readonly currentConditionId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdConditionCurrentConditionIdPut operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest
+ */
+export interface DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPut
+     */
+    readonly currentConditionId: string
+
+    /**
+     * 
+     * @type {CurrentCondition}
+     * @memberof DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPut
+     */
+    readonly currentCondition: CurrentCondition
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdConditionPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdConditionPostRequest
+ */
+export interface DefaultApiApiV1HistoriesIdConditionPostRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdConditionPost
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {CurrentCondition}
+     * @memberof DefaultApiApiV1HistoriesIdConditionPost
+     */
+    readonly currentCondition: CurrentCondition
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdGet operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdGetRequest
+ */
+export interface DefaultApiApiV1HistoriesIdGetRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdImageImageIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest {
+    /**
+     * The ID of the clinical history record.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdImageImageIdDelete
+     */
+    readonly id: string
+
+    /**
+     * The ID of the image to delete.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdImageImageIdDelete
+     */
+    readonly imageId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdImagePost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdImagePostRequest
+ */
+export interface DefaultApiApiV1HistoriesIdImagePostRequest {
+    /**
+     * The ID of the clinical history record.
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdImagePost
+     */
+    readonly id: string
+
+    /**
+     * The image file to upload.
+     * @type {File}
+     * @memberof DefaultApiApiV1HistoriesIdImagePost
+     */
+    readonly file?: File
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdTreatmentPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdTreatmentPostRequest
+ */
+export interface DefaultApiApiV1HistoriesIdTreatmentPostRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentPost
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {Treatment}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentPost
+     */
+    readonly treatment: Treatment
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdTreatmentTreatmentIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDelete
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDelete
+     */
+    readonly treatmentId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesIdTreatmentTreatmentIdPut operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest
+ */
+export interface DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPut
+     */
+    readonly treatmentId: string
+
+    /**
+     * 
+     * @type {Treatment}
+     * @memberof DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPut
+     */
+    readonly treatment: Treatment
+}
+
+/**
+ * Request parameters for apiV1HistoriesPatientPatientIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest
+ */
+export interface DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesPatientPatientIdDelete
+     */
+    readonly patientId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesPatientPatientIdGet operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesPatientPatientIdGetRequest
+ */
+export interface DefaultApiApiV1HistoriesPatientPatientIdGetRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiApiV1HistoriesPatientPatientIdGet
+     */
+    readonly patientId: string
+}
+
+/**
+ * Request parameters for apiV1HistoriesPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiApiV1HistoriesPostRequest
+ */
+export interface DefaultApiApiV1HistoriesPostRequest {
+    /**
+     * 
+     * @type {CreateClinicalHistory}
+     * @memberof DefaultApiApiV1HistoriesPost
+     */
+    readonly createClinicalHistory: CreateClinicalHistory
+}
+
+/**
+ * Request parameters for deleteClinicIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiDeleteClinicIdDeleteRequest
+ */
+export interface DefaultApiDeleteClinicIdDeleteRequest {
+    /**
+     * Unique identifier of the clinic
+     * @type {string}
+     * @memberof DefaultApiDeleteClinicIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for deletePaymentIdDelete operation in DefaultApi.
+ * @export
+ * @interface DefaultApiDeletePaymentIdDeleteRequest
+ */
+export interface DefaultApiDeletePaymentIdDeleteRequest {
+    /**
+     * Unique identifier of the payment
+     * @type {string}
+     * @memberof DefaultApiDeletePaymentIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for getClinicByIdIdGet operation in DefaultApi.
+ * @export
+ * @interface DefaultApiGetClinicByIdIdGetRequest
+ */
+export interface DefaultApiGetClinicByIdIdGetRequest {
+    /**
+     * Unique identifier of the clinic
+     * @type {string}
+     * @memberof DefaultApiGetClinicByIdIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for getPaymentByIdIdGet operation in DefaultApi.
+ * @export
+ * @interface DefaultApiGetPaymentByIdIdGetRequest
+ */
+export interface DefaultApiGetPaymentByIdIdGetRequest {
+    /**
+     * Unique identifier of the payment
+     * @type {string}
+     * @memberof DefaultApiGetPaymentByIdIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for paymentPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiPaymentPostRequest
+ */
+export interface DefaultApiPaymentPostRequest {
+    /**
+     * 
+     * @type {PaymentPostRequest}
+     * @memberof DefaultApiPaymentPost
+     */
+    readonly paymentPostRequest: PaymentPostRequest
+}
+
+/**
+ * Request parameters for registerClinicPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiRegisterClinicPostRequest
+ */
+export interface DefaultApiRegisterClinicPostRequest {
+    /**
+     * 
+     * @type {RegisterClinicPostRequest}
+     * @memberof DefaultApiRegisterClinicPost
+     */
+    readonly registerClinicPostRequest: RegisterClinicPostRequest
+}
+
+/**
+ * Request parameters for registerPaymentPost operation in DefaultApi.
+ * @export
+ * @interface DefaultApiRegisterPaymentPostRequest
+ */
+export interface DefaultApiRegisterPaymentPostRequest {
+    /**
+     * 
+     * @type {RegisterPaymentPostRequest}
+     * @memberof DefaultApiRegisterPaymentPost
+     */
+    readonly registerPaymentPostRequest: RegisterPaymentPostRequest
+}
+
+/**
+ * Request parameters for updateClinicIdPut operation in DefaultApi.
+ * @export
+ * @interface DefaultApiUpdateClinicIdPutRequest
+ */
+export interface DefaultApiUpdateClinicIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof DefaultApiUpdateClinicIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {UpdateClinicIdPutRequest}
+     * @memberof DefaultApiUpdateClinicIdPut
+     */
+    readonly updateClinicIdPutRequest: UpdateClinicIdPutRequest
+}
+
+/**
+ * DefaultApi - object-oriented interface
+ * @export
+ * @class DefaultApi
+ * @extends {BaseAPI}
+ */
+export class DefaultApi extends BaseAPI {
+    /**
+     * 
+     * @summary Get all clinical histories
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesGet(options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Removes an allergy from the allergies set in a specific clinical history.
+     * @summary Remove an allergy from a clinical history
+     * @param {DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdAllergyAllergyDelete(requestParameters: DefaultApiApiV1HistoriesIdAllergyAllergyDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdAllergyAllergyDelete(requestParameters.id, requestParameters.allergy, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Adds an allergy to the allergies set in a specific clinical history.
+     * @summary Add an allergy to a clinical history
+     * @param {DefaultApiApiV1HistoriesIdAllergyPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdAllergyPost(requestParameters: DefaultApiApiV1HistoriesIdAllergyPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdAllergyPost(requestParameters.id, requestParameters.apiV1HistoriesIdAllergyPostRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Deletes a specific analytic associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+     * @summary Delete an analytic from a clinical history record
+     * @param {DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdAnalyticAnalyticIdDelete(requestParameters: DefaultApiApiV1HistoriesIdAnalyticAnalyticIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdAnalyticAnalyticIdDelete(requestParameters.id, requestParameters.analyticId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Allows uploading an analytic to an existing clinical history record.
+     * @summary Upload an analytic to a clinical history record
+     * @param {DefaultApiApiV1HistoriesIdAnalyticPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdAnalyticPost(requestParameters: DefaultApiApiV1HistoriesIdAnalyticPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdAnalyticPost(requestParameters.id, requestParameters.file, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete a current condition from a clinical history
+     * @param {DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdConditionCurrentConditionIdDelete(requestParameters: DefaultApiApiV1HistoriesIdConditionCurrentConditionIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdConditionCurrentConditionIdDelete(requestParameters.id, requestParameters.currentConditionId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Update a current condition in a clinical history
+     * @param {DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdConditionCurrentConditionIdPut(requestParameters: DefaultApiApiV1HistoriesIdConditionCurrentConditionIdPutRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdConditionCurrentConditionIdPut(requestParameters.id, requestParameters.currentConditionId, requestParameters.currentCondition, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Add a new current condition to a clinical history
+     * @param {DefaultApiApiV1HistoriesIdConditionPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdConditionPost(requestParameters: DefaultApiApiV1HistoriesIdConditionPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdConditionPost(requestParameters.id, requestParameters.currentCondition, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete a clinical history by its ID
+     * @param {DefaultApiApiV1HistoriesIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdDelete(requestParameters: DefaultApiApiV1HistoriesIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get a clinical history by its ID
+     * @param {DefaultApiApiV1HistoriesIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdGet(requestParameters: DefaultApiApiV1HistoriesIdGetRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Deletes a specific image associated with a clinical history record by its ID. Also removes the file from Azure Blob Storage.
+     * @summary Delete an image from a clinical history record
+     * @param {DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdImageImageIdDelete(requestParameters: DefaultApiApiV1HistoriesIdImageImageIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdImageImageIdDelete(requestParameters.id, requestParameters.imageId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Allows uploading an image to an existing clinical history record.
+     * @summary Upload an image to a clinical history record
+     * @param {DefaultApiApiV1HistoriesIdImagePostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdImagePost(requestParameters: DefaultApiApiV1HistoriesIdImagePostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdImagePost(requestParameters.id, requestParameters.file, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Add a new treatment to a clinical history
+     * @param {DefaultApiApiV1HistoriesIdTreatmentPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdTreatmentPost(requestParameters: DefaultApiApiV1HistoriesIdTreatmentPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdTreatmentPost(requestParameters.id, requestParameters.treatment, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete a treatment from a clinical history
+     * @param {DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdTreatmentTreatmentIdDelete(requestParameters: DefaultApiApiV1HistoriesIdTreatmentTreatmentIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdTreatmentTreatmentIdDelete(requestParameters.id, requestParameters.treatmentId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Update a treatment in a clinical history
+     * @param {DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesIdTreatmentTreatmentIdPut(requestParameters: DefaultApiApiV1HistoriesIdTreatmentTreatmentIdPutRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesIdTreatmentTreatmentIdPut(requestParameters.id, requestParameters.treatmentId, requestParameters.treatment, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete a clinical history by patient ID
+     * @param {DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesPatientPatientIdDelete(requestParameters: DefaultApiApiV1HistoriesPatientPatientIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesPatientPatientIdDelete(requestParameters.patientId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get a clinical history by patient ID
+     * @param {DefaultApiApiV1HistoriesPatientPatientIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesPatientPatientIdGet(requestParameters: DefaultApiApiV1HistoriesPatientPatientIdGetRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesPatientPatientIdGet(requestParameters.patientId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Create a new clinical history
+     * @param {DefaultApiApiV1HistoriesPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public apiV1HistoriesPost(requestParameters: DefaultApiApiV1HistoriesPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).apiV1HistoriesPost(requestParameters.createClinicalHistory, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Deletes a specific clinic by its unique ID.
+     * @summary Delete a clinic by ID
+     * @param {DefaultApiDeleteClinicIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public deleteClinicIdDelete(requestParameters: DefaultApiDeleteClinicIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).deleteClinicIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Deletes a specific payment by its unique ID.
+     * @summary Delete a payment by ID
+     * @param {DefaultApiDeletePaymentIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public deletePaymentIdDelete(requestParameters: DefaultApiDeletePaymentIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).deletePaymentIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Retrieve a specific clinic by its unique ID.
+     * @summary Get a clinic by ID
+     * @param {DefaultApiGetClinicByIdIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public getClinicByIdIdGet(requestParameters: DefaultApiGetClinicByIdIdGetRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).getClinicByIdIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Retrieve a specific payment by its unique ID.
+     * @summary Get a payment by ID
+     * @param {DefaultApiGetPaymentByIdIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public getPaymentByIdIdGet(requestParameters: DefaultApiGetPaymentByIdIdGetRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).getPaymentByIdIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Returns a list of all registered clinics.
+     * @summary Retrieve all clinics
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public obtainAllClinicGet(options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).obtainAllClinicGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Returns a list of all registered payments.
+     * @summary Retrieve all payments
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public obtainAllPaymentsGet(options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).obtainAllPaymentsGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Returns a list of all registered plans.
+     * @summary Retrieve all plans
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public obtainAllPlansGet(options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).obtainAllPlansGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Endpoint to process a payment, save the payment data, and activate the clinic.
+     * @summary Process a payment
+     * @param {DefaultApiPaymentPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public paymentPost(requestParameters: DefaultApiPaymentPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).paymentPost(requestParameters.paymentPostRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Creates a new clinic and saves it in the database.
+     * @summary Register a new clinic
+     * @param {DefaultApiRegisterClinicPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public registerClinicPost(requestParameters: DefaultApiRegisterClinicPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).registerClinicPost(requestParameters.registerClinicPostRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Creates a new payment and saves it in the database.
+     * @summary Register a new payment
+     * @param {DefaultApiRegisterPaymentPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public registerPaymentPost(requestParameters: DefaultApiRegisterPaymentPostRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).registerPaymentPost(requestParameters.registerPaymentPostRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Updates a clinic\'s details based on its unique ID.
+     * @summary Update a clinic by ID
+     * @param {DefaultApiUpdateClinicIdPutRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApi
+     */
+    public updateClinicIdPut(requestParameters: DefaultApiUpdateClinicIdPutRequest, options?: RawAxiosRequestConfig) {
+        return DefaultApiFp(this.configuration).updateClinicIdPut(requestParameters.id, requestParameters.updateClinicIdPutRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
+ * PatientsApi - axios parameter creator
+ * @export
+ */
+export const PatientsApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
+        /**
+         * Fetch a list of all patients.
+         * @summary Retrieve all patients
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/v1/patients/`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Remove a specific patient from the system.
+         * @summary Delete a patient by ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdDelete: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1PatientsIdDelete', 'id', id)
+            const localVarPath = `/api/v1/patients/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Fetch a specific patient using their unique ID.
+         * @summary Get patient by ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdGet: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1PatientsIdGet', 'id', id)
+            const localVarPath = `/api/v1/patients/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Modify the details of a specific patient.
+         * @summary Update a patient by ID
+         * @param {string} id 
+         * @param {{ [key: string]: any; }} requestBody 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdPut: async (id: string, requestBody: { [key: string]: any; }, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'id' is not null or undefined
+            assertParamExists('apiV1PatientsIdPut', 'id', id)
+            // verify required parameter 'requestBody' is not null or undefined
+            assertParamExists('apiV1PatientsIdPut', 'requestBody', requestBody)
+            const localVarPath = `/api/v1/patients/{id}`
+                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(requestBody, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * Creates a new patient record in the system.
+         * @summary Register a new patient
+         * @param {Patient} patient 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsPost: async (patient: Patient, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'patient' is not null or undefined
+            assertParamExists('apiV1PatientsPost', 'patient', patient)
+            const localVarPath = `/api/v1/patients/`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(patient, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+    }
+};
+
+/**
+ * PatientsApi - functional programming interface
+ * @export
+ */
+export const PatientsApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = PatientsApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * Fetch a list of all patients.
+         * @summary Retrieve all patients
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1PatientsGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<Patient>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1PatientsGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PatientsApi.apiV1PatientsGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Remove a specific patient from the system.
+         * @summary Delete a patient by ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1PatientsIdDelete(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Patient>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1PatientsIdDelete(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PatientsApi.apiV1PatientsIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Fetch a specific patient using their unique ID.
+         * @summary Get patient by ID
+         * @param {string} id 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1PatientsIdGet(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Patient>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1PatientsIdGet(id, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PatientsApi.apiV1PatientsIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Modify the details of a specific patient.
+         * @summary Update a patient by ID
+         * @param {string} id 
+         * @param {{ [key: string]: any; }} requestBody 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1PatientsIdPut(id: string, requestBody: { [key: string]: any; }, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Patient>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1PatientsIdPut(id, requestBody, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PatientsApi.apiV1PatientsIdPut']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * Creates a new patient record in the system.
+         * @summary Register a new patient
+         * @param {Patient} patient 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiV1PatientsPost(patient: Patient, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Patient>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiV1PatientsPost(patient, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PatientsApi.apiV1PatientsPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * PatientsApi - factory interface
+ * @export
+ */
+export const PatientsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = PatientsApiFp(configuration)
+    return {
+        /**
+         * Fetch a list of all patients.
+         * @summary Retrieve all patients
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<Patient>> {
+            return localVarFp.apiV1PatientsGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Remove a specific patient from the system.
+         * @summary Delete a patient by ID
+         * @param {PatientsApiApiV1PatientsIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdDelete(requestParameters: PatientsApiApiV1PatientsIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<Patient> {
+            return localVarFp.apiV1PatientsIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Fetch a specific patient using their unique ID.
+         * @summary Get patient by ID
+         * @param {PatientsApiApiV1PatientsIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdGet(requestParameters: PatientsApiApiV1PatientsIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Patient> {
+            return localVarFp.apiV1PatientsIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Modify the details of a specific patient.
+         * @summary Update a patient by ID
+         * @param {PatientsApiApiV1PatientsIdPutRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsIdPut(requestParameters: PatientsApiApiV1PatientsIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Patient> {
+            return localVarFp.apiV1PatientsIdPut(requestParameters.id, requestParameters.requestBody, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * Creates a new patient record in the system.
+         * @summary Register a new patient
+         * @param {PatientsApiApiV1PatientsPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiV1PatientsPost(requestParameters: PatientsApiApiV1PatientsPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<Patient> {
+            return localVarFp.apiV1PatientsPost(requestParameters.patient, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * Request parameters for apiV1PatientsIdDelete operation in PatientsApi.
+ * @export
+ * @interface PatientsApiApiV1PatientsIdDeleteRequest
+ */
+export interface PatientsApiApiV1PatientsIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof PatientsApiApiV1PatientsIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1PatientsIdGet operation in PatientsApi.
+ * @export
+ * @interface PatientsApiApiV1PatientsIdGetRequest
+ */
+export interface PatientsApiApiV1PatientsIdGetRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof PatientsApiApiV1PatientsIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1PatientsIdPut operation in PatientsApi.
+ * @export
+ * @interface PatientsApiApiV1PatientsIdPutRequest
+ */
+export interface PatientsApiApiV1PatientsIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof PatientsApiApiV1PatientsIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {{ [key: string]: any; }}
+     * @memberof PatientsApiApiV1PatientsIdPut
+     */
+    readonly requestBody: { [key: string]: any; }
+}
+
+/**
+ * Request parameters for apiV1PatientsPost operation in PatientsApi.
+ * @export
+ * @interface PatientsApiApiV1PatientsPostRequest
+ */
+export interface PatientsApiApiV1PatientsPostRequest {
+    /**
+     * 
+     * @type {Patient}
+     * @memberof PatientsApiApiV1PatientsPost
+     */
+    readonly patient: Patient
+}
+
+/**
+ * PatientsApi - object-oriented interface
+ * @export
+ * @class PatientsApi
+ * @extends {BaseAPI}
+ */
+export class PatientsApi extends BaseAPI {
+    /**
+     * Fetch a list of all patients.
+     * @summary Retrieve all patients
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PatientsApi
+     */
+    public apiV1PatientsGet(options?: RawAxiosRequestConfig) {
+        return PatientsApiFp(this.configuration).apiV1PatientsGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Remove a specific patient from the system.
+     * @summary Delete a patient by ID
+     * @param {PatientsApiApiV1PatientsIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PatientsApi
+     */
+    public apiV1PatientsIdDelete(requestParameters: PatientsApiApiV1PatientsIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return PatientsApiFp(this.configuration).apiV1PatientsIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Fetch a specific patient using their unique ID.
+     * @summary Get patient by ID
+     * @param {PatientsApiApiV1PatientsIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PatientsApi
+     */
+    public apiV1PatientsIdGet(requestParameters: PatientsApiApiV1PatientsIdGetRequest, options?: RawAxiosRequestConfig) {
+        return PatientsApiFp(this.configuration).apiV1PatientsIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Modify the details of a specific patient.
+     * @summary Update a patient by ID
+     * @param {PatientsApiApiV1PatientsIdPutRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PatientsApi
+     */
+    public apiV1PatientsIdPut(requestParameters: PatientsApiApiV1PatientsIdPutRequest, options?: RawAxiosRequestConfig) {
+        return PatientsApiFp(this.configuration).apiV1PatientsIdPut(requestParameters.id, requestParameters.requestBody, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * Creates a new patient record in the system.
+     * @summary Register a new patient
+     * @param {PatientsApiApiV1PatientsPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PatientsApi
+     */
+    public apiV1PatientsPost(requestParameters: PatientsApiApiV1PatientsPostRequest, options?: RawAxiosRequestConfig) {
+        return PatientsApiFp(this.configuration).apiV1PatientsPost(requestParameters.patient, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
+ * StaffApi - axios parameter creator
+ * @export
+ */
+export const StaffApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
+        /**
+         * 
+         * @summary Get doctors by speciality in a clinic
+         * @param {string} clinicId 
+         * @param {string} [speciality] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffClinicClinicIdSpecialitySpecialityGet: async (clinicId: string, speciality?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'clinicId' is not null or undefined
+            assertParamExists('staffClinicClinicIdSpecialitySpecialityGet', 'clinicId', clinicId)
+            const localVarPath = `/staff/clinic/{clinicId}/speciality/{speciality}`
+                .replace(`{${"clinicId"}}`, encodeURIComponent(String(clinicId)))
+                .replace(`{${"speciality"}}`, encodeURIComponent(String(speciality)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Delete a doctor
+         * @param {string} doctorId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdDelete: async (doctorId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'doctorId' is not null or undefined
+            assertParamExists('staffDoctorIdDelete', 'doctorId', doctorId)
+            const localVarPath = `/staff/{doctorId}`
+                .replace(`{${"doctorId"}}`, encodeURIComponent(String(doctorId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get doctor by ID
+         * @param {string} doctorId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdGet: async (doctorId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'doctorId' is not null or undefined
+            assertParamExists('staffDoctorIdGet', 'doctorId', doctorId)
+            const localVarPath = `/staff/{doctorId}`
+                .replace(`{${"doctorId"}}`, encodeURIComponent(String(doctorId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Update doctor speciality
+         * @param {string} doctorId 
+         * @param {StaffDoctorIdPutRequest} staffDoctorIdPutRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdPut: async (doctorId: string, staffDoctorIdPutRequest: StaffDoctorIdPutRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'doctorId' is not null or undefined
+            assertParamExists('staffDoctorIdPut', 'doctorId', doctorId)
+            // verify required parameter 'staffDoctorIdPutRequest' is not null or undefined
+            assertParamExists('staffDoctorIdPut', 'staffDoctorIdPutRequest', staffDoctorIdPutRequest)
+            const localVarPath = `/staff/{doctorId}`
+                .replace(`{${"doctorId"}}`, encodeURIComponent(String(doctorId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'PUT', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(staffDoctorIdPutRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get authenticated doctor
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffMeGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/staff/me`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Register a new doctor
+         * @param {StaffRegisterPostRequest} staffRegisterPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffRegisterPost: async (staffRegisterPostRequest: StaffRegisterPostRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'staffRegisterPostRequest' is not null or undefined
+            assertParamExists('staffRegisterPost', 'staffRegisterPostRequest', staffRegisterPostRequest)
+            const localVarPath = `/staff/register`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication cookieAuth required
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(staffRegisterPostRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+    }
+};
+
+/**
+ * StaffApi - functional programming interface
+ * @export
+ */
+export const StaffApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = StaffApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * 
+         * @summary Get doctors by speciality in a clinic
+         * @param {string} clinicId 
+         * @param {string} [speciality] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffClinicClinicIdSpecialitySpecialityGet(clinicId: string, speciality?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffClinicClinicIdSpecialitySpecialityGet(clinicId, speciality, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffClinicClinicIdSpecialitySpecialityGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Delete a doctor
+         * @param {string} doctorId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffDoctorIdDelete(doctorId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffDoctorIdDelete(doctorId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffDoctorIdDelete']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Get doctor by ID
+         * @param {string} doctorId 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffDoctorIdGet(doctorId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffDoctorIdGet(doctorId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffDoctorIdGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Update doctor speciality
+         * @param {string} doctorId 
+         * @param {StaffDoctorIdPutRequest} staffDoctorIdPutRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffDoctorIdPut(doctorId: string, staffDoctorIdPutRequest: StaffDoctorIdPutRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffDoctorIdPut(doctorId, staffDoctorIdPutRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffDoctorIdPut']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Get authenticated doctor
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffMeGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StaffMeGet200Response>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffMeGet(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffMeGet']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Register a new doctor
+         * @param {StaffRegisterPostRequest} staffRegisterPostRequest 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async staffRegisterPost(staffRegisterPostRequest: StaffRegisterPostRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.staffRegisterPost(staffRegisterPostRequest, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StaffApi.staffRegisterPost']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * StaffApi - factory interface
+ * @export
+ */
+export const StaffApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = StaffApiFp(configuration)
+    return {
+        /**
+         * 
+         * @summary Get doctors by speciality in a clinic
+         * @param {StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffClinicClinicIdSpecialitySpecialityGet(requestParameters: StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.staffClinicClinicIdSpecialitySpecialityGet(requestParameters.clinicId, requestParameters.speciality, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Delete a doctor
+         * @param {StaffApiStaffDoctorIdDeleteRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdDelete(requestParameters: StaffApiStaffDoctorIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.staffDoctorIdDelete(requestParameters.doctorId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get doctor by ID
+         * @param {StaffApiStaffDoctorIdGetRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdGet(requestParameters: StaffApiStaffDoctorIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.staffDoctorIdGet(requestParameters.doctorId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Update doctor speciality
+         * @param {StaffApiStaffDoctorIdPutRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffDoctorIdPut(requestParameters: StaffApiStaffDoctorIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.staffDoctorIdPut(requestParameters.doctorId, requestParameters.staffDoctorIdPutRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get authenticated doctor
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffMeGet(options?: RawAxiosRequestConfig): AxiosPromise<StaffMeGet200Response> {
+            return localVarFp.staffMeGet(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Register a new doctor
+         * @param {StaffApiStaffRegisterPostRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        staffRegisterPost(requestParameters: StaffApiStaffRegisterPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.staffRegisterPost(requestParameters.staffRegisterPostRequest, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * Request parameters for staffClinicClinicIdSpecialitySpecialityGet operation in StaffApi.
+ * @export
+ * @interface StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest
+ */
+export interface StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffApiStaffClinicClinicIdSpecialitySpecialityGet
+     */
+    readonly clinicId: string
+
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffApiStaffClinicClinicIdSpecialitySpecialityGet
+     */
+    readonly speciality?: string
+}
+
+/**
+ * Request parameters for staffDoctorIdDelete operation in StaffApi.
+ * @export
+ * @interface StaffApiStaffDoctorIdDeleteRequest
+ */
+export interface StaffApiStaffDoctorIdDeleteRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffApiStaffDoctorIdDelete
+     */
+    readonly doctorId: string
+}
+
+/**
+ * Request parameters for staffDoctorIdGet operation in StaffApi.
+ * @export
+ * @interface StaffApiStaffDoctorIdGetRequest
+ */
+export interface StaffApiStaffDoctorIdGetRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffApiStaffDoctorIdGet
+     */
+    readonly doctorId: string
+}
+
+/**
+ * Request parameters for staffDoctorIdPut operation in StaffApi.
+ * @export
+ * @interface StaffApiStaffDoctorIdPutRequest
+ */
+export interface StaffApiStaffDoctorIdPutRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof StaffApiStaffDoctorIdPut
+     */
+    readonly doctorId: string
+
+    /**
+     * 
+     * @type {StaffDoctorIdPutRequest}
+     * @memberof StaffApiStaffDoctorIdPut
+     */
+    readonly staffDoctorIdPutRequest: StaffDoctorIdPutRequest
+}
+
+/**
+ * Request parameters for staffRegisterPost operation in StaffApi.
+ * @export
+ * @interface StaffApiStaffRegisterPostRequest
+ */
+export interface StaffApiStaffRegisterPostRequest {
+    /**
+     * 
+     * @type {StaffRegisterPostRequest}
+     * @memberof StaffApiStaffRegisterPost
+     */
+    readonly staffRegisterPostRequest: StaffRegisterPostRequest
+}
+
+/**
+ * StaffApi - object-oriented interface
+ * @export
+ * @class StaffApi
+ * @extends {BaseAPI}
+ */
+export class StaffApi extends BaseAPI {
+    /**
+     * 
+     * @summary Get doctors by speciality in a clinic
+     * @param {StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffClinicClinicIdSpecialitySpecialityGet(requestParameters: StaffApiStaffClinicClinicIdSpecialitySpecialityGetRequest, options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffClinicClinicIdSpecialitySpecialityGet(requestParameters.clinicId, requestParameters.speciality, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Delete a doctor
+     * @param {StaffApiStaffDoctorIdDeleteRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffDoctorIdDelete(requestParameters: StaffApiStaffDoctorIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffDoctorIdDelete(requestParameters.doctorId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get doctor by ID
+     * @param {StaffApiStaffDoctorIdGetRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffDoctorIdGet(requestParameters: StaffApiStaffDoctorIdGetRequest, options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffDoctorIdGet(requestParameters.doctorId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Update doctor speciality
+     * @param {StaffApiStaffDoctorIdPutRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffDoctorIdPut(requestParameters: StaffApiStaffDoctorIdPutRequest, options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffDoctorIdPut(requestParameters.doctorId, requestParameters.staffDoctorIdPutRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get authenticated doctor
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffMeGet(options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffMeGet(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Register a new doctor
+     * @param {StaffApiStaffRegisterPostRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof StaffApi
+     */
+    public staffRegisterPost(requestParameters: StaffApiStaffRegisterPostRequest, options?: RawAxiosRequestConfig) {
+        return StaffApiFp(this.configuration).staffRegisterPost(requestParameters.staffRegisterPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
@@ -2530,12 +7304,12 @@ export const UsersApiFactory = function (configuration?: Configuration, basePath
         /**
          * Allows authenticated users to change their password.
          * @summary Change user password
-         * @param {ApiV1UsersChangePasswordPostRequest} apiV1UsersChangePasswordPostRequest 
+         * @param {UsersApiApiV1UsersChangePasswordPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersChangePasswordPost(apiV1UsersChangePasswordPostRequest: ApiV1UsersChangePasswordPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersChangePasswordPost200Response> {
-            return localVarFp.apiV1UsersChangePasswordPost(apiV1UsersChangePasswordPostRequest, options).then((request) => request(axios, basePath));
+        apiV1UsersChangePasswordPost(requestParameters: UsersApiApiV1UsersChangePasswordPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersChangePasswordPost200Response> {
+            return localVarFp.apiV1UsersChangePasswordPost(requestParameters.apiV1UsersChangePasswordPostRequest, options).then((request) => request(axios, basePath));
         },
         /**
          * Allows authenticated users to enable two-factor authentication.
@@ -2549,56 +7323,146 @@ export const UsersApiFactory = function (configuration?: Configuration, basePath
         /**
          * Delete user by user ID. Requires the user to have specific roles.
          * @summary Deletes user
-         * @param {string} id ID of the user to update
+         * @param {UsersApiApiV1UsersIdDeleteRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersIdDelete(id: string, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdDelete204Response> {
-            return localVarFp.apiV1UsersIdDelete(id, options).then((request) => request(axios, basePath));
+        apiV1UsersIdDelete(requestParameters: UsersApiApiV1UsersIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdDelete204Response> {
+            return localVarFp.apiV1UsersIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve user details by user ID. Requires the user to be the owner or have specific roles.
          * @summary Retrieve user information
-         * @param {string} id ID of the user to retrieve
+         * @param {UsersApiApiV1UsersIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersIdGet(id: string, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdGet200Response> {
-            return localVarFp.apiV1UsersIdGet(id, options).then((request) => request(axios, basePath));
+        apiV1UsersIdGet(requestParameters: UsersApiApiV1UsersIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdGet200Response> {
+            return localVarFp.apiV1UsersIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * Update user details by user ID. Requires the user to be the owner or have specific roles.
          * @summary Update user information
-         * @param {string} id ID of the user to update
-         * @param {ApiV1UsersIdPutRequest} apiV1UsersIdPutRequest 
+         * @param {UsersApiApiV1UsersIdPutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersIdPut(id: string, apiV1UsersIdPutRequest: ApiV1UsersIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdPut200Response> {
-            return localVarFp.apiV1UsersIdPut(id, apiV1UsersIdPutRequest, options).then((request) => request(axios, basePath));
+        apiV1UsersIdPut(requestParameters: UsersApiApiV1UsersIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersIdPut200Response> {
+            return localVarFp.apiV1UsersIdPut(requestParameters.id, requestParameters.apiV1UsersIdPutRequest, options).then((request) => request(axios, basePath));
         },
         /**
          * Creates a new user with specified roles, email, and associated IDs for doctor or patient.
          * @summary Create User
-         * @param {ApiV1UsersPostRequest} apiV1UsersPostRequest 
+         * @param {UsersApiApiV1UsersPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersPost(apiV1UsersPostRequest: ApiV1UsersPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersPost201Response> {
-            return localVarFp.apiV1UsersPost(apiV1UsersPostRequest, options).then((request) => request(axios, basePath));
+        apiV1UsersPost(requestParameters: UsersApiApiV1UsersPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersPost201Response> {
+            return localVarFp.apiV1UsersPost(requestParameters.apiV1UsersPostRequest, options).then((request) => request(axios, basePath));
         },
         /**
          * Allows authenticated users to verify two-factor authentication.
          * @summary Verify two-factor authentication
-         * @param {ApiV1UsersVerify2faPostRequest} apiV1UsersVerify2faPostRequest 
+         * @param {UsersApiApiV1UsersVerify2faPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1UsersVerify2faPost(apiV1UsersVerify2faPostRequest: ApiV1UsersVerify2faPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersVerify2faPost200Response> {
-            return localVarFp.apiV1UsersVerify2faPost(apiV1UsersVerify2faPostRequest, options).then((request) => request(axios, basePath));
+        apiV1UsersVerify2faPost(requestParameters: UsersApiApiV1UsersVerify2faPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<ApiV1UsersVerify2faPost200Response> {
+            return localVarFp.apiV1UsersVerify2faPost(requestParameters.apiV1UsersVerify2faPostRequest, options).then((request) => request(axios, basePath));
         },
     };
 };
+
+/**
+ * Request parameters for apiV1UsersChangePasswordPost operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersChangePasswordPostRequest
+ */
+export interface UsersApiApiV1UsersChangePasswordPostRequest {
+    /**
+     * 
+     * @type {ApiV1UsersChangePasswordPostRequest}
+     * @memberof UsersApiApiV1UsersChangePasswordPost
+     */
+    readonly apiV1UsersChangePasswordPostRequest: ApiV1UsersChangePasswordPostRequest
+}
+
+/**
+ * Request parameters for apiV1UsersIdDelete operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersIdDeleteRequest
+ */
+export interface UsersApiApiV1UsersIdDeleteRequest {
+    /**
+     * ID of the user to update
+     * @type {string}
+     * @memberof UsersApiApiV1UsersIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1UsersIdGet operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersIdGetRequest
+ */
+export interface UsersApiApiV1UsersIdGetRequest {
+    /**
+     * ID of the user to retrieve
+     * @type {string}
+     * @memberof UsersApiApiV1UsersIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1UsersIdPut operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersIdPutRequest
+ */
+export interface UsersApiApiV1UsersIdPutRequest {
+    /**
+     * ID of the user to update
+     * @type {string}
+     * @memberof UsersApiApiV1UsersIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {ApiV1UsersIdPutRequest}
+     * @memberof UsersApiApiV1UsersIdPut
+     */
+    readonly apiV1UsersIdPutRequest: ApiV1UsersIdPutRequest
+}
+
+/**
+ * Request parameters for apiV1UsersPost operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersPostRequest
+ */
+export interface UsersApiApiV1UsersPostRequest {
+    /**
+     * 
+     * @type {ApiV1UsersPostRequest}
+     * @memberof UsersApiApiV1UsersPost
+     */
+    readonly apiV1UsersPostRequest: ApiV1UsersPostRequest
+}
+
+/**
+ * Request parameters for apiV1UsersVerify2faPost operation in UsersApi.
+ * @export
+ * @interface UsersApiApiV1UsersVerify2faPostRequest
+ */
+export interface UsersApiApiV1UsersVerify2faPostRequest {
+    /**
+     * 
+     * @type {ApiV1UsersVerify2faPostRequest}
+     * @memberof UsersApiApiV1UsersVerify2faPost
+     */
+    readonly apiV1UsersVerify2faPostRequest: ApiV1UsersVerify2faPostRequest
+}
 
 /**
  * UsersApi - object-oriented interface
@@ -2610,13 +7474,13 @@ export class UsersApi extends BaseAPI {
     /**
      * Allows authenticated users to change their password.
      * @summary Change user password
-     * @param {ApiV1UsersChangePasswordPostRequest} apiV1UsersChangePasswordPostRequest 
+     * @param {UsersApiApiV1UsersChangePasswordPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersChangePasswordPost(apiV1UsersChangePasswordPostRequest: ApiV1UsersChangePasswordPostRequest, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersChangePasswordPost(apiV1UsersChangePasswordPostRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersChangePasswordPost(requestParameters: UsersApiApiV1UsersChangePasswordPostRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersChangePasswordPost(requestParameters.apiV1UsersChangePasswordPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -2633,62 +7497,61 @@ export class UsersApi extends BaseAPI {
     /**
      * Delete user by user ID. Requires the user to have specific roles.
      * @summary Deletes user
-     * @param {string} id ID of the user to update
+     * @param {UsersApiApiV1UsersIdDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersIdDelete(id: string, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersIdDelete(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersIdDelete(requestParameters: UsersApiApiV1UsersIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Retrieve user details by user ID. Requires the user to be the owner or have specific roles.
      * @summary Retrieve user information
-     * @param {string} id ID of the user to retrieve
+     * @param {UsersApiApiV1UsersIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersIdGet(id: string, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersIdGet(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersIdGet(requestParameters: UsersApiApiV1UsersIdGetRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Update user details by user ID. Requires the user to be the owner or have specific roles.
      * @summary Update user information
-     * @param {string} id ID of the user to update
-     * @param {ApiV1UsersIdPutRequest} apiV1UsersIdPutRequest 
+     * @param {UsersApiApiV1UsersIdPutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersIdPut(id: string, apiV1UsersIdPutRequest: ApiV1UsersIdPutRequest, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersIdPut(id, apiV1UsersIdPutRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersIdPut(requestParameters: UsersApiApiV1UsersIdPutRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersIdPut(requestParameters.id, requestParameters.apiV1UsersIdPutRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Creates a new user with specified roles, email, and associated IDs for doctor or patient.
      * @summary Create User
-     * @param {ApiV1UsersPostRequest} apiV1UsersPostRequest 
+     * @param {UsersApiApiV1UsersPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersPost(apiV1UsersPostRequest: ApiV1UsersPostRequest, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersPost(apiV1UsersPostRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersPost(requestParameters: UsersApiApiV1UsersPostRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersPost(requestParameters.apiV1UsersPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Allows authenticated users to verify two-factor authentication.
      * @summary Verify two-factor authentication
-     * @param {ApiV1UsersVerify2faPostRequest} apiV1UsersVerify2faPostRequest 
+     * @param {UsersApiApiV1UsersVerify2faPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof UsersApi
      */
-    public apiV1UsersVerify2faPost(apiV1UsersVerify2faPostRequest: ApiV1UsersVerify2faPostRequest, options?: RawAxiosRequestConfig) {
-        return UsersApiFp(this.configuration).apiV1UsersVerify2faPost(apiV1UsersVerify2faPostRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1UsersVerify2faPost(requestParameters: UsersApiApiV1UsersVerify2faPostRequest, options?: RawAxiosRequestConfig) {
+        return UsersApiFp(this.configuration).apiV1UsersVerify2faPost(requestParameters.apiV1UsersVerify2faPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
@@ -3072,12 +7935,12 @@ export const WorkshiftsApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Get workshifts by doctor ID
-         * @param {string} doctorId Doctor ID
+         * @param {WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsDoctorDoctorIdGet(doctorId: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<Workshift>> {
-            return localVarFp.apiV1WorkshiftsDoctorDoctorIdGet(doctorId, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsDoctorDoctorIdGet(requestParameters: WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Workshift>> {
+            return localVarFp.apiV1WorkshiftsDoctorDoctorIdGet(requestParameters.doctorId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3091,56 +7954,146 @@ export const WorkshiftsApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Delete a workshift by ID
-         * @param {string} id Workshift ID
+         * @param {WorkshiftsApiApiV1WorkshiftsIdDeleteRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsIdDelete(id: string, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.apiV1WorkshiftsIdDelete(id, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsIdDelete(requestParameters: WorkshiftsApiApiV1WorkshiftsIdDeleteRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.apiV1WorkshiftsIdDelete(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get a workshift by ID
-         * @param {string} id Workshift ID
+         * @param {WorkshiftsApiApiV1WorkshiftsIdGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsIdGet(id: string, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
-            return localVarFp.apiV1WorkshiftsIdGet(id, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsIdGet(requestParameters: WorkshiftsApiApiV1WorkshiftsIdGetRequest, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
+            return localVarFp.apiV1WorkshiftsIdGet(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update a workshift by ID
-         * @param {string} id Workshift ID
-         * @param {WorkshiftInput} workshiftInput 
+         * @param {WorkshiftsApiApiV1WorkshiftsIdPutRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsIdPut(id: string, workshiftInput: WorkshiftInput, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
-            return localVarFp.apiV1WorkshiftsIdPut(id, workshiftInput, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsIdPut(requestParameters: WorkshiftsApiApiV1WorkshiftsIdPutRequest, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
+            return localVarFp.apiV1WorkshiftsIdPut(requestParameters.id, requestParameters.workshiftInput, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Create a new workshift
-         * @param {WorkshiftInput} workshiftInput 
+         * @param {WorkshiftsApiApiV1WorkshiftsPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsPost(workshiftInput: WorkshiftInput, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
-            return localVarFp.apiV1WorkshiftsPost(workshiftInput, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsPost(requestParameters: WorkshiftsApiApiV1WorkshiftsPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<Workshift> {
+            return localVarFp.apiV1WorkshiftsPost(requestParameters.workshiftInput, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Create a new workshift for a week
-         * @param {ApiV1WorkshiftsWeekPostRequest} apiV1WorkshiftsWeekPostRequest 
+         * @param {WorkshiftsApiApiV1WorkshiftsWeekPostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiV1WorkshiftsWeekPost(apiV1WorkshiftsWeekPostRequest: ApiV1WorkshiftsWeekPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Workshift>> {
-            return localVarFp.apiV1WorkshiftsWeekPost(apiV1WorkshiftsWeekPostRequest, options).then((request) => request(axios, basePath));
+        apiV1WorkshiftsWeekPost(requestParameters: WorkshiftsApiApiV1WorkshiftsWeekPostRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<Workshift>> {
+            return localVarFp.apiV1WorkshiftsWeekPost(requestParameters.apiV1WorkshiftsWeekPostRequest, options).then((request) => request(axios, basePath));
         },
     };
 };
+
+/**
+ * Request parameters for apiV1WorkshiftsDoctorDoctorIdGet operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest {
+    /**
+     * Doctor ID
+     * @type {string}
+     * @memberof WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGet
+     */
+    readonly doctorId: string
+}
+
+/**
+ * Request parameters for apiV1WorkshiftsIdDelete operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsIdDeleteRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsIdDeleteRequest {
+    /**
+     * Workshift ID
+     * @type {string}
+     * @memberof WorkshiftsApiApiV1WorkshiftsIdDelete
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1WorkshiftsIdGet operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsIdGetRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsIdGetRequest {
+    /**
+     * Workshift ID
+     * @type {string}
+     * @memberof WorkshiftsApiApiV1WorkshiftsIdGet
+     */
+    readonly id: string
+}
+
+/**
+ * Request parameters for apiV1WorkshiftsIdPut operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsIdPutRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsIdPutRequest {
+    /**
+     * Workshift ID
+     * @type {string}
+     * @memberof WorkshiftsApiApiV1WorkshiftsIdPut
+     */
+    readonly id: string
+
+    /**
+     * 
+     * @type {WorkshiftInput}
+     * @memberof WorkshiftsApiApiV1WorkshiftsIdPut
+     */
+    readonly workshiftInput: WorkshiftInput
+}
+
+/**
+ * Request parameters for apiV1WorkshiftsPost operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsPostRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsPostRequest {
+    /**
+     * 
+     * @type {WorkshiftInput}
+     * @memberof WorkshiftsApiApiV1WorkshiftsPost
+     */
+    readonly workshiftInput: WorkshiftInput
+}
+
+/**
+ * Request parameters for apiV1WorkshiftsWeekPost operation in WorkshiftsApi.
+ * @export
+ * @interface WorkshiftsApiApiV1WorkshiftsWeekPostRequest
+ */
+export interface WorkshiftsApiApiV1WorkshiftsWeekPostRequest {
+    /**
+     * 
+     * @type {ApiV1WorkshiftsWeekPostRequest}
+     * @memberof WorkshiftsApiApiV1WorkshiftsWeekPost
+     */
+    readonly apiV1WorkshiftsWeekPostRequest: ApiV1WorkshiftsWeekPostRequest
+}
 
 /**
  * WorkshiftsApi - object-oriented interface
@@ -3152,13 +8105,13 @@ export class WorkshiftsApi extends BaseAPI {
     /**
      * 
      * @summary Get workshifts by doctor ID
-     * @param {string} doctorId Doctor ID
+     * @param {WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsDoctorDoctorIdGet(doctorId: string, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsDoctorDoctorIdGet(doctorId, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsDoctorDoctorIdGet(requestParameters: WorkshiftsApiApiV1WorkshiftsDoctorDoctorIdGetRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsDoctorDoctorIdGet(requestParameters.doctorId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -3175,62 +8128,61 @@ export class WorkshiftsApi extends BaseAPI {
     /**
      * 
      * @summary Delete a workshift by ID
-     * @param {string} id Workshift ID
+     * @param {WorkshiftsApiApiV1WorkshiftsIdDeleteRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsIdDelete(id: string, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdDelete(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsIdDelete(requestParameters: WorkshiftsApiApiV1WorkshiftsIdDeleteRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdDelete(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get a workshift by ID
-     * @param {string} id Workshift ID
+     * @param {WorkshiftsApiApiV1WorkshiftsIdGetRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsIdGet(id: string, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdGet(id, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsIdGet(requestParameters: WorkshiftsApiApiV1WorkshiftsIdGetRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdGet(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update a workshift by ID
-     * @param {string} id Workshift ID
-     * @param {WorkshiftInput} workshiftInput 
+     * @param {WorkshiftsApiApiV1WorkshiftsIdPutRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsIdPut(id: string, workshiftInput: WorkshiftInput, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdPut(id, workshiftInput, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsIdPut(requestParameters: WorkshiftsApiApiV1WorkshiftsIdPutRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsIdPut(requestParameters.id, requestParameters.workshiftInput, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a new workshift
-     * @param {WorkshiftInput} workshiftInput 
+     * @param {WorkshiftsApiApiV1WorkshiftsPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsPost(workshiftInput: WorkshiftInput, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsPost(workshiftInput, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsPost(requestParameters: WorkshiftsApiApiV1WorkshiftsPostRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsPost(requestParameters.workshiftInput, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Create a new workshift for a week
-     * @param {ApiV1WorkshiftsWeekPostRequest} apiV1WorkshiftsWeekPostRequest 
+     * @param {WorkshiftsApiApiV1WorkshiftsWeekPostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof WorkshiftsApi
      */
-    public apiV1WorkshiftsWeekPost(apiV1WorkshiftsWeekPostRequest: ApiV1WorkshiftsWeekPostRequest, options?: RawAxiosRequestConfig) {
-        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsWeekPost(apiV1WorkshiftsWeekPostRequest, options).then((request) => request(this.axios, this.basePath));
+    public apiV1WorkshiftsWeekPost(requestParameters: WorkshiftsApiApiV1WorkshiftsWeekPostRequest, options?: RawAxiosRequestConfig) {
+        return WorkshiftsApiFp(this.configuration).apiV1WorkshiftsWeekPost(requestParameters.apiV1WorkshiftsWeekPostRequest, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
